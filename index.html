@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A fan-made BTS ARIRANG Tour surprise songs tracker, updated city by city.">
+  <meta name="theme-color" content="#6f3cc3">
+  <title>BTS ARIRANG Tour — Surprise Songs Tracker</title>
+  <link rel="icon" href="./assets/original/arirang-symbol-red.jpeg">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the tracker</a>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="BTS ARIRANG Surprise Songs Tracker home">
+      <img src="./assets/original/arirang-symbol-red.jpeg" alt="" width="104" height="70">
+      <span><strong>BTS ARIRANG TOUR</strong><small>Surprise Songs Tracker</small></span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#map">Map</a>
+      <a href="#explore">Explore</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">BTS OT7 · FAN-MADE · UPDATED AFTER EVERY SHOW</p>
+        <h1 id="hero-title"><span>BTS ARIRANG TOUR</span>Surprise Songs Tracker</h1>
+        <p class="hero-intro">Follow every surprise song, find its first appearance, and explore the world tour one stop at a time.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#map">Explore the tour</a>
+          <button class="button button-ghost" type="button" data-tab-jump="full-tour">See all shows</button>
+        </div>
+        <a class="creator-social" href="https://www.tiktok.com/@mayajoonofficial" target="_blank" rel="noopener noreferrer" aria-label="Follow Maya Joon on TikTok at mayajoonofficial; opens in a new tab">
+          <span class="tiktok-mark" aria-hidden="true"><i>♪</i></span>
+          <span><small>Maya Joon on TikTok</small><strong>@mayajoonofficial <i aria-hidden="true">↗</i></strong></span>
+        </a>
+        <dl class="hero-stats" aria-label="Tour tracker summary">
+          <div><dt id="stat-shows">—</dt><dd>official shows</dd></div>
+          <div><dt id="stat-completed">—</dt><dd>completed</dd></div>
+          <div><dt id="stat-songs">—</dt><dd>unique songs</dd></div>
+        </dl>
+      </div>
+      <div class="maya-stage" aria-label="Maya Pop welcomes visitors">
+        <div class="speech-bubble" aria-live="polite" aria-atomic="true"><span id="greeting">Welcome! 💜</span></div>
+        <div class="maya-glow" aria-hidden="true"></div>
+        <img src="./assets/original/maya-pop-purple.jpeg" alt="Maya Pop in a purple jacket holding a BTS light stick" width="650" height="813">
+        <p class="host-label"><span>YOUR HOST</span> Maya Pop</p>
+      </div>
+    </section>
+
+    <section class="update-strip" aria-label="Current dataset status">
+      <span class="pulse" aria-hidden="true"></span>
+      <strong id="updated-through">Loading tour data…</strong>
+      <span id="next-show"></span>
+    </section>
+
+    <section class="map-section" id="map" aria-labelledby="map-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">CITY BY CITY</p><h2 id="map-title">The ARIRANG world</h2></div>
+        <p>Tap a stop to see every show in that city. Filled markers have surprise songs; outlined markers are upcoming.</p>
+      </div>
+      <div class="map-card">
+        <div class="map-toolbar" aria-label="Map legend">
+          <span><i class="legend-dot completed"></i> Completed</span>
+          <span><i class="legend-dot upcoming"></i> Upcoming</span>
+        </div>
+        <div class="map-wrap">
+          <svg id="world-map" viewBox="0 0 1000 500" role="img" aria-labelledby="map-svg-title map-svg-desc">
+            <title id="map-svg-title">World map of BTS ARIRANG Tour cities</title>
+            <desc id="map-svg-desc">Interactive markers show completed and upcoming tour stops.</desc>
+            <g class="land" aria-hidden="true">
+              <path d="M63 101l54-48 94 2 44 27 67 5 33 29-9 42-39 17-31 39-47-5-18 48-36 22-28-24 8-42-50-24-31-45z"/>
+              <path d="M247 264l45 21 31 57-17 103-34 30-20-59-30-65z"/>
+              <path d="M445 95l48-26 49 12 23 34 71-2 35 28-24 32-65 1-26 30-33-16-25 33-42-20-31-45z"/>
+              <path d="M488 226l64-22 58 27 18 77-39 117-48 19-27-71-47-50z"/>
+              <path d="M625 92l100-20 112 28 107 77-23 56-70-6-35 41-61-20-32-57-91-9-41-37z"/>
+              <path d="M815 346l62-20 58 34-9 57-67 14-47-35z"/>
+              <path d="M932 260l18-11 13 21-17 18z"/>
+            </g>
+            <g id="map-markers"></g>
+          </svg>
+        </div>
+        <div class="map-city-buttons" id="map-city-buttons" aria-label="Tour cities"></div>
+        <p class="map-hint">Use Tab to move between markers · Enter to open</p>
+      </div>
+    </section>
+
+    <section class="explore-section" id="explore" aria-labelledby="explore-title">
+      <div class="section-heading compact">
+        <div><p class="eyebrow">ONE DATASET · FOUR WAYS TO EXPLORE</p><h2 id="explore-title">Find your moment</h2></div>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Tour exploration views">
+        <button type="button" role="tab" id="tab-countries" aria-controls="panel-countries" aria-selected="true" data-tab="countries">Countries</button>
+        <button type="button" role="tab" id="tab-songs" aria-controls="panel-songs" aria-selected="false" tabindex="-1" data-tab="songs">Songs</button>
+        <button type="button" role="tab" id="tab-full-tour" aria-controls="panel-full-tour" aria-selected="false" tabindex="-1" data-tab="full-tour">Full Tour</button>
+        <button type="button" role="tab" id="tab-print" aria-controls="panel-print" aria-selected="false" tabindex="-1" data-tab="print">Print</button>
+      </div>
+
+      <div class="tab-panel" role="tabpanel" id="panel-countries" aria-labelledby="tab-countries" data-panel="countries">
+        <div class="control-row">
+          <label for="country-select">Choose a country</label>
+          <select id="country-select"></select>
+        </div>
+        <div id="country-view" class="result-area" aria-live="polite"></div>
+      </div>
+
+      <div class="tab-panel" role="tabpanel" id="panel-songs" aria-labelledby="tab-songs" data-panel="songs" hidden>
+        <div class="search-wrap">
+          <label for="song-search">Search surprise songs</label>
+          <input id="song-search" type="search" placeholder="Try “Spring Day”" autocomplete="off" spellcheck="false">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+        </div>
+        <div id="song-view" class="result-area" aria-live="polite"></div>
+      </div>
+
+      <div class="tab-panel" role="tabpanel" id="panel-full-tour" aria-labelledby="tab-full-tour" data-panel="full-tour" hidden>
+        <div class="filters" aria-label="Tour filters">
+          <label>Leg<select id="tour-leg-filter"><option value="all">All legs</option></select></label>
+          <label>Status<select id="tour-status-filter"><option value="all">All shows</option><option value="completed">Completed</option><option value="upcoming">Upcoming</option></select></label>
+        </div>
+        <div id="tour-view" class="timeline" aria-live="polite"></div>
+      </div>
+
+      <div class="tab-panel" role="tabpanel" id="panel-print" aria-labelledby="tab-print" data-panel="print" hidden>
+        <div class="print-layout">
+          <div>
+            <p class="eyebrow">MAKE IT YOURS</p>
+            <h3>Print a clean tracker</h3>
+            <p>Choose the full tour, a leg, or one country. Your browser can print it or save it as a PDF.</p>
+            <div class="print-controls">
+              <label for="print-scope">Print scope</label>
+              <select id="print-scope"><option value="all">Full Tour</option></select>
+              <button class="button button-primary" type="button" id="print-button">Print / Save PDF</button>
+            </div>
+          </div>
+          <div class="print-preview" aria-hidden="true">
+            <div class="paper-lines"><b>ARIRANG</b><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="about-card">
+        <div><p class="eyebrow">HOW TO READ THE TRACKER</p><h2 id="about-title">First means first.</h2></div>
+        <p>A star marks the first chronological appearance of a song as a surprise song on this tour. The site calculates it directly from the show history—never from a hand-edited label.</p>
+        <div class="first-demo"><span class="first-star" aria-hidden="true">★</span><strong>First appearance</strong><span>Later performance</span></div>
+      </div>
+      <aside class="privacy-card">
+        <span aria-hidden="true">◎</span>
+        <div><h3>Private by design</h3><p>No accounts, cookies, analytics, forms, or location tracking. Everything runs in your browser.</p></div>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>Made with borahae for ARMY.</strong><p>Fan-made BTS OT7 project. Not affiliated with BIGHIT MUSIC or HYBE.</p></div>
+    <img src="./assets/original/maya-joon-signature.png" alt="Created by Maya Joon" width="240" height="80">
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <div class="sheet-backdrop" id="sheet-backdrop" hidden></div>
+  <aside class="city-sheet" id="city-sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden>
+    <button type="button" class="sheet-close" id="sheet-close" aria-label="Close city details">×</button>
+    <div id="sheet-content"></div>
+  </aside>
+
+  <div id="print-document" class="print-document" aria-hidden="true"></div>
+  <noscript><p class="noscript">This interactive tracker needs JavaScript to load the tour dataset.</p></noscript>
+</body>
+</html>

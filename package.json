@@ -1,0 +1,16 @@
+{
+  "name": "arirang-surprisesong-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "test": "node tests/smoke.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "npm run validate && npm test && npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
+

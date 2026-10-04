@@ -1,0 +1,9 @@
+{
+  "name": "BTS ARIRANG Tour — Surprise Songs Tracker",
+  "short_name": "ARIRANG Tracker",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fbfaf7",
+  "theme_color": "#6f3cc3",
+  "icons": []
+}

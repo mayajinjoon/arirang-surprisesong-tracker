@@ -1,0 +1,3442 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": {
+    "repository": "mayajinjoon/arirang-surprisesong-tracker",
+    "siteName": "BTS ARIRANG TOUR — Surprise Songs Tracker",
+    "creatorBrand": "Maya Joon",
+    "subject": "BTS OT7",
+    "language": "en",
+    "fanMade": true
+  },
+  "dataset": {
+    "asOf": "2026-10-04",
+    "completedThrough": "2026-10-03",
+    "completedThroughLabel": "Bogotá D2",
+    "totalShows": 88,
+    "completedShows": 50,
+    "upcomingShows": 38,
+    "confidenceNote": "Official BIGHIT MUSIC/HYBE/Weverse sources govern calendar data. Surprise-song data is independently corroborated because no official consolidated song ledger was found."
+  },
+  "rules": {
+    "chronology": "Sort shows by ISO date ascending; performanceOrder breaks ties only within a show.",
+    "firstAppearance": "Derived at runtime by scanning completed shows chronologically and marking only the first occurrence of each canonical song title. Do not store or hand-edit a firstAppearance flag.",
+    "upcomingSongs": "Upcoming shows must keep surpriseSongs as an empty array. Never invent placeholders or titles.",
+    "status": "completed means the show occurred and song data was checked; upcoming means officially announced but not yet completed at dataset.asOf.",
+    "canonicalization": "Song titles in surpriseSongs are canonical display keys. Aliases are a presentation/search concern and must not alter chronology."
+  },
+  "legs": [
+    {
+      "id": "opening-korea-japan",
+      "label": "Korea & Japan Opening Shows",
+      "officialLabel": false
+    },
+    {
+      "id": "north-america-i",
+      "label": "North America — Part I",
+      "officialLabel": false
+    },
+    {
+      "id": "korea-busan",
+      "label": "Busan",
+      "officialLabel": false
+    },
+    {
+      "id": "europe",
+      "label": "Europe",
+      "officialLabel": false
+    },
+    {
+      "id": "north-america-ii",
+      "label": "North America — Part II",
+      "officialLabel": false
+    },
+    {
+      "id": "latin-america",
+      "label": "Latin America",
+      "officialLabel": true
+    },
+    {
+      "id": "asia-australia",
+      "label": "Asia & Australia",
+      "officialLabel": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "official-tour-site",
+      "title": "BTS WORLD TOUR ARIRANG — Tour Dates",
+      "publisher": "BIGHIT MUSIC / HYBE",
+      "url": "https://btsworldtourofficial.com/",
+      "type": "official-tour-calendar",
+      "authority": "primary",
+      "accessedAt": "2026-10-04"
+    },
+    {
+      "id": "weverse-na-europe",
+      "title": "BTS WORLD TOUR ‘ARIRANG’ IN NORTH AMERICA & EUROPE Ticket Information",
+      "publisher": "BIGHIT MUSIC via Weverse",
+      "url": "https://weverse.io/bts/notice/33091",
+      "type": "official-announcement",
+      "authority": "primary",
+      "accessedAt": "2026-10-04"
+    },
+    {
+      "id": "weverse-goyang",
+      "title": "BTS WORLD TOUR ‘ARIRANG’ IN GOYANG SOUND CHECK Schedule",
+      "publisher": "BIGHIT MUSIC via Weverse",
+      "url": "https://weverse.io/bts/notice/33155",
+      "type": "official-announcement",
+      "authority": "primary",
+      "accessedAt": "2026-10-04"
+    },
+    {
+      "id": "japan-official",
+      "title": "BTS WORLD TOUR ‘ARIRANG’ IN JAPAN — Schedule",
+      "publisher": "BTS Japan Official",
+      "url": "https://bts-official.jp/schedule/sEfPyALR162k%3D",
+      "type": "official-announcement",
+      "authority": "primary",
+      "accessedAt": "2026-10-04"
+    },
+    {
+      "id": "weverse-busan",
+      "title": "BTS THE CITY ARIRANG — BUSAN Notice",
+      "publisher": "HYBE via Weverse",
+      "url": "https://weverse.io/bts/notice/35912",
+      "type": "official-announcement",
+      "authority": "primary",
+      "accessedAt": "2026-10-04"
+    },
+    {
+      "id": "weverse-latam",
+      "title": "BTS WORLD TOUR ‘ARIRANG’ IN LATIN AMERICA Ticket Information",
+      "publisher": "BIGHIT MUSIC via Weverse",
+      "url": "https://weverse.io/bts/notice/34448",
+      "type": "official-announcement",
+      "authority": "primary",
+      "accessedAt": "2026-10-04"
+    },
+    {
+      "id": "weverse-latam-additional",
+      "title": "Additional shows in Lima, Santiago and Buenos Aires",
+      "publisher": "BIGHIT MUSIC via Weverse",
+      "url": "https://weverse.io/bts/notice/34732",
+      "type": "official-additional-show-announcement",
+      "authority": "primary",
+      "accessedAt": "2026-10-04"
+    },
+    {
+      "id": "weverse-asia-australia",
+      "title": "BTS WORLD TOUR ‘ARIRANG’ IN ASIA & AUSTRALIA Ticket Information",
+      "publisher": "BIGHIT MUSIC via Weverse",
+      "url": "https://weverse.io/bts/notice/36080",
+      "type": "official-announcement",
+      "authority": "primary",
+      "accessedAt": "2026-10-04"
+    },
+    {
+      "id": "weverse-melbourne-additional",
+      "title": "Additional Show Information — Melbourne",
+      "publisher": "BIGHIT MUSIC via Weverse",
+      "url": "https://weverse.io/bts/notice/36364",
+      "type": "official-additional-show-announcement",
+      "authority": "primary",
+      "accessedAt": "2026-10-04"
+    },
+    {
+      "id": "weverse-jakarta-bulacan-additional",
+      "title": "Additional Show Information — Jakarta & Bulacan",
+      "publisher": "BIGHIT MUSIC via Weverse",
+      "url": "https://weverse.io/bts/notice/36777",
+      "type": "official-additional-show-announcement",
+      "authority": "primary",
+      "accessedAt": "2026-10-04"
+    },
+    {
+      "id": "ap-original-calendar",
+      "title": "BTS 2026–2027 tour dates",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/01db0e428723c0febc514373969333bd",
+      "type": "contemporaneous-calendar-record",
+      "authority": "secondary",
+      "accessedAt": "2026-10-04"
+    },
+    {
+      "id": "kpopgo-consolidated",
+      "title": "BTS ARIRANG Surprise Songs Tracker 2026",
+      "publisher": "KPopGo",
+      "url": "https://kpopgo.art/news/bts-arirang-surprise-songs-tracker",
+      "type": "consolidated-setlist-tracker",
+      "authority": "secondary",
+      "accessedAt": "2026-10-04"
+    },
+    {
+      "id": "honey-pop-consolidated",
+      "title": "Every BTS Surprise Song on the ARIRANG World Tour",
+      "publisher": "The Honey POP",
+      "url": "https://thehoneypop.com/2026/04/13/bts-surprise-songs-arirang-world-tour/",
+      "type": "consolidated-setlist-tracker",
+      "authority": "secondary",
+      "accessedAt": "2026-10-04"
+    },
+    {
+      "id": "setlistfm-artist",
+      "title": "BTS Concert Setlists — ARIRANG Tour",
+      "publisher": "setlist.fm",
+      "url": "https://www.setlist.fm/setlists/bts-3bdd50e4.html",
+      "type": "community-setlist-archive",
+      "authority": "secondary",
+      "accessedAt": "2026-10-04"
+    },
+    {
+      "id": "setlistfm-busan-d2",
+      "title": "BTS at Busan Asiad Main Stadium — 13 Jun 2026",
+      "publisher": "setlist.fm",
+      "url": "https://www.setlist.fm/setlist/bts/2026/busan-asiad-main-stadium-busan-south-korea-1b4afda0.html",
+      "type": "show-setlist",
+      "authority": "secondary",
+      "accessedAt": "2026-10-04"
+    },
+    {
+      "id": "bogota-d1-local-report",
+      "title": "Concierto de BTS en Bogotá: primera noche",
+      "publisher": "Minuto60",
+      "url": "https://www.minuto60.com/entretenimiento-cultura/como-fue-el-primer-concierto-de-bts-en-bogota-videos-momentos/16492",
+      "type": "local-concert-report",
+      "authority": "secondary",
+      "accessedAt": "2026-10-04"
+    },
+    {
+      "id": "bogota-d2-livenation",
+      "title": "BTS featured setlist — Bogotá, 3 Oct 2026",
+      "publisher": "Live Nation",
+      "url": "https://www.livenation.com/artist/K8vZ917KpXV/bts-events",
+      "type": "show-setlist",
+      "authority": "secondary",
+      "accessedAt": "2026-10-04"
+    },
+    {
+      "id": "bogota-d2-setlistfm",
+      "title": "BTS at Estadio El Campín — 3 Oct 2026",
+      "publisher": "setlist.fm",
+      "url": "https://www.setlist.fm/venue/estadio-el-campin-bogota-colombia-63d636ff.html?venue=63d636ff",
+      "type": "show-setlist",
+      "authority": "secondary",
+      "accessedAt": "2026-10-04"
+    }
+  ],
+  "shows": [
+    {
+      "id": "2026-04-09-goyang-d1",
+      "date": "2026-04-09",
+      "status": "completed",
+      "leg": "opening-korea-japan",
+      "country": {
+        "code": "KR",
+        "name": "South Korea"
+      },
+      "city": "Goyang",
+      "venue": "Goyang Sports Complex Main Stadium",
+      "dayNumber": 1,
+      "label": "Goyang D1",
+      "coordinates": {
+        "latitude": 37.6584,
+        "longitude": 126.8319,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Mikrokosmos",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "I NEED U",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-goyang",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-04-11-goyang-d2",
+      "date": "2026-04-11",
+      "status": "completed",
+      "leg": "opening-korea-japan",
+      "country": {
+        "code": "KR",
+        "name": "South Korea"
+      },
+      "city": "Goyang",
+      "venue": "Goyang Sports Complex Main Stadium",
+      "dayNumber": 2,
+      "label": "Goyang D2",
+      "coordinates": {
+        "latitude": 37.6584,
+        "longitude": 126.8319,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Take Two",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "DNA",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-goyang",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-04-12-goyang-d3",
+      "date": "2026-04-12",
+      "status": "completed",
+      "leg": "opening-korea-japan",
+      "country": {
+        "code": "KR",
+        "name": "South Korea"
+      },
+      "city": "Goyang",
+      "venue": "Goyang Sports Complex Main Stadium",
+      "dayNumber": 3,
+      "label": "Goyang D3",
+      "coordinates": {
+        "latitude": 37.6584,
+        "longitude": 126.8319,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Spring Day",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "RUN",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-goyang",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-04-17-tokyo-d1",
+      "date": "2026-04-17",
+      "status": "completed",
+      "leg": "opening-korea-japan",
+      "country": {
+        "code": "JP",
+        "name": "Japan"
+      },
+      "city": "Tokyo",
+      "venue": "Tokyo Dome",
+      "dayNumber": 1,
+      "label": "Tokyo D1",
+      "coordinates": {
+        "latitude": 35.7056,
+        "longitude": 139.7519,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Save ME",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Crystal Snow",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "japan-official",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-04-18-tokyo-d2",
+      "date": "2026-04-18",
+      "status": "completed",
+      "leg": "opening-korea-japan",
+      "country": {
+        "code": "JP",
+        "name": "Japan"
+      },
+      "city": "Tokyo",
+      "venue": "Tokyo Dome",
+      "dayNumber": 2,
+      "label": "Tokyo D2",
+      "coordinates": {
+        "latitude": 35.7056,
+        "longitude": 139.7519,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "DOPE",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "FOR YOU",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "japan-official",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-04-25-tampa-d1",
+      "date": "2026-04-25",
+      "status": "completed",
+      "leg": "north-america-i",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "Tampa",
+      "venue": "Raymond James Stadium",
+      "dayNumber": 1,
+      "label": "Tampa D1",
+      "coordinates": {
+        "latitude": 27.9759,
+        "longitude": -82.5033,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Permission to Dance",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Magic Shop",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-04-26-tampa-d2",
+      "date": "2026-04-26",
+      "status": "completed",
+      "leg": "north-america-i",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "Tampa",
+      "venue": "Raymond James Stadium",
+      "dayNumber": 2,
+      "label": "Tampa D2",
+      "coordinates": {
+        "latitude": 27.9759,
+        "longitude": -82.5033,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Boy With Luv",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Pied Piper",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-04-28-tampa-d3",
+      "date": "2026-04-28",
+      "status": "completed",
+      "leg": "north-america-i",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "Tampa",
+      "venue": "Raymond James Stadium",
+      "dayNumber": 3,
+      "label": "Tampa D3",
+      "coordinates": {
+        "latitude": 27.9759,
+        "longitude": -82.5033,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Life Goes On",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Silver Spoon (Baepsae)",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-05-02-el-paso-d1",
+      "date": "2026-05-02",
+      "status": "completed",
+      "leg": "north-america-i",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "El Paso",
+      "venue": "Sun Bowl Stadium",
+      "dayNumber": 1,
+      "label": "El Paso D1",
+      "coordinates": {
+        "latitude": 31.7733,
+        "longitude": -106.5089,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "ON",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Outro: Wings",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-05-03-el-paso-d2",
+      "date": "2026-05-03",
+      "status": "completed",
+      "leg": "north-america-i",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "El Paso",
+      "venue": "Sun Bowl Stadium",
+      "dayNumber": 2,
+      "label": "El Paso D2",
+      "coordinates": {
+        "latitude": 31.7733,
+        "longitude": -106.5089,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Dionysus",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Best of Me",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-05-07-mexico-city-d1",
+      "date": "2026-05-07",
+      "status": "completed",
+      "leg": "north-america-i",
+      "country": {
+        "code": "MX",
+        "name": "Mexico"
+      },
+      "city": "Mexico City",
+      "venue": "Estadio GNP Seguros",
+      "dayNumber": 1,
+      "label": "Mexico City D1",
+      "coordinates": {
+        "latitude": 19.4049,
+        "longitude": -99.0953,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Boy In Luv",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "So What",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-05-09-mexico-city-d2",
+      "date": "2026-05-09",
+      "status": "completed",
+      "leg": "north-america-i",
+      "country": {
+        "code": "MX",
+        "name": "Mexico"
+      },
+      "city": "Mexico City",
+      "venue": "Estadio GNP Seguros",
+      "dayNumber": 2,
+      "label": "Mexico City D2",
+      "coordinates": {
+        "latitude": 19.4049,
+        "longitude": -99.0953,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "We Are Bulletproof Pt.2",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Just One Day",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-05-10-mexico-city-d3",
+      "date": "2026-05-10",
+      "status": "completed",
+      "leg": "north-america-i",
+      "country": {
+        "code": "MX",
+        "name": "Mexico"
+      },
+      "city": "Mexico City",
+      "venue": "Estadio GNP Seguros",
+      "dayNumber": 3,
+      "label": "Mexico City D3",
+      "coordinates": {
+        "latitude": 19.4049,
+        "longitude": -99.0953,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Airplane Pt.2",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Spring Day",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-05-16-stanford-d1",
+      "date": "2026-05-16",
+      "status": "completed",
+      "leg": "north-america-i",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "Stanford",
+      "venue": "Stanford Stadium",
+      "dayNumber": 1,
+      "label": "Stanford D1",
+      "coordinates": {
+        "latitude": 37.4345,
+        "longitude": -122.1611,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "N.O",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Anpanman",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-05-17-stanford-d2",
+      "date": "2026-05-17",
+      "status": "completed",
+      "leg": "north-america-i",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "Stanford",
+      "venue": "Stanford Stadium",
+      "dayNumber": 2,
+      "label": "Stanford D2",
+      "coordinates": {
+        "latitude": 37.4345,
+        "longitude": -122.1611,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "DOPE",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Blood Sweat & Tears",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-05-19-stanford-d3",
+      "date": "2026-05-19",
+      "status": "completed",
+      "leg": "north-america-i",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "Stanford",
+      "venue": "Stanford Stadium",
+      "dayNumber": 3,
+      "label": "Stanford D3",
+      "coordinates": {
+        "latitude": 37.4345,
+        "longitude": -122.1611,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "I NEED U",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "No More Dream",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-05-23-las-vegas-d1",
+      "date": "2026-05-23",
+      "status": "completed",
+      "leg": "north-america-i",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "Las Vegas",
+      "venue": "Allegiant Stadium",
+      "dayNumber": 1,
+      "label": "Las Vegas D1",
+      "coordinates": {
+        "latitude": 36.0909,
+        "longitude": -115.1833,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Permission to Dance",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Go Go",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-05-24-las-vegas-d2",
+      "date": "2026-05-24",
+      "status": "completed",
+      "leg": "north-america-i",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "Las Vegas",
+      "venue": "Allegiant Stadium",
+      "dayNumber": 2,
+      "label": "Las Vegas D2",
+      "coordinates": {
+        "latitude": 36.0909,
+        "longitude": -115.1833,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Black Swan",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Spine Breaker",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-05-27-las-vegas-d3",
+      "date": "2026-05-27",
+      "status": "completed",
+      "leg": "north-america-i",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "Las Vegas",
+      "venue": "Allegiant Stadium",
+      "dayNumber": 3,
+      "label": "Las Vegas D3",
+      "coordinates": {
+        "latitude": 36.0909,
+        "longitude": -115.1833,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Anpanman",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Attack on Bangtan",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-05-28-las-vegas-d4",
+      "date": "2026-05-28",
+      "status": "completed",
+      "leg": "north-america-i",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "Las Vegas",
+      "venue": "Allegiant Stadium",
+      "dayNumber": 4,
+      "label": "Las Vegas D4",
+      "coordinates": {
+        "latitude": 36.0909,
+        "longitude": -115.1833,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Boyz With Fun",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Danger",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-06-12-busan-d1",
+      "date": "2026-06-12",
+      "status": "completed",
+      "leg": "korea-busan",
+      "country": {
+        "code": "KR",
+        "name": "South Korea"
+      },
+      "city": "Busan",
+      "venue": "Busan Asiad Main Stadium",
+      "dayNumber": 1,
+      "label": "Busan D1",
+      "coordinates": {
+        "latitude": 35.1902,
+        "longitude": 129.058,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Paldogangsan",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Ma City",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [
+        {
+          "title": "One More Night",
+          "sequenceWithinSpecials": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "scheduleSourceIds": [
+        "weverse-busan",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-06-13-busan-d2",
+      "date": "2026-06-13",
+      "status": "completed",
+      "leg": "korea-busan",
+      "country": {
+        "code": "KR",
+        "name": "South Korea"
+      },
+      "city": "Busan",
+      "venue": "Busan Asiad Main Stadium",
+      "dayNumber": 2,
+      "label": "Busan D2",
+      "coordinates": {
+        "latitude": 35.1902,
+        "longitude": 129.058,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Dimple",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "setlistfm-busan-d2",
+            "honey-pop-consolidated"
+          ]
+        },
+        {
+          "title": "Ddaeng",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "setlistfm-busan-d2",
+            "honey-pop-consolidated"
+          ]
+        }
+      ],
+      "specialPerformances": [
+        {
+          "title": "Magic Shop",
+          "sequenceWithinSpecials": 1,
+          "sourceIds": [
+            "setlistfm-busan-d2",
+            "honey-pop-consolidated"
+          ]
+        },
+        {
+          "title": "One More Night",
+          "sequenceWithinSpecials": 2,
+          "sourceIds": [
+            "setlistfm-busan-d2",
+            "honey-pop-consolidated"
+          ]
+        }
+      ],
+      "scheduleSourceIds": [
+        "weverse-busan",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-06-26-madrid-d1",
+      "date": "2026-06-26",
+      "status": "completed",
+      "leg": "europe",
+      "country": {
+        "code": "ES",
+        "name": "Spain"
+      },
+      "city": "Madrid",
+      "venue": "Riyadh Air Metropolitano",
+      "dayNumber": 1,
+      "label": "Madrid D1",
+      "coordinates": {
+        "latitude": 40.4362,
+        "longitude": -3.5995,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Airplane Pt.2",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Outro: Wings",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-06-27-madrid-d2",
+      "date": "2026-06-27",
+      "status": "completed",
+      "leg": "europe",
+      "country": {
+        "code": "ES",
+        "name": "Spain"
+      },
+      "city": "Madrid",
+      "venue": "Riyadh Air Metropolitano",
+      "dayNumber": 2,
+      "label": "Madrid D2",
+      "coordinates": {
+        "latitude": 40.4362,
+        "longitude": -3.5995,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Mikrokosmos",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Best of Me",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-07-01-brussels-d1",
+      "date": "2026-07-01",
+      "status": "completed",
+      "leg": "europe",
+      "country": {
+        "code": "BE",
+        "name": "Belgium"
+      },
+      "city": "Brussels",
+      "venue": "King Baudouin Stadium",
+      "dayNumber": 1,
+      "label": "Brussels D1",
+      "coordinates": {
+        "latitude": 50.895,
+        "longitude": 4.334,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Tomorrow",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Boy With Luv",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-07-02-brussels-d2",
+      "date": "2026-07-02",
+      "status": "completed",
+      "leg": "europe",
+      "country": {
+        "code": "BE",
+        "name": "Belgium"
+      },
+      "city": "Brussels",
+      "venue": "King Baudouin Stadium",
+      "dayNumber": 2,
+      "label": "Brussels D2",
+      "coordinates": {
+        "latitude": 50.895,
+        "longitude": 4.334,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "ON",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "For Youth",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-07-06-london-d1",
+      "date": "2026-07-06",
+      "status": "completed",
+      "leg": "europe",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom"
+      },
+      "city": "London",
+      "venue": "Tottenham Hotspur Stadium",
+      "dayNumber": 1,
+      "label": "London D1",
+      "coordinates": {
+        "latitude": 51.6043,
+        "longitude": -0.0664,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Life Goes On",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Dionysus",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-07-07-london-d2",
+      "date": "2026-07-07",
+      "status": "completed",
+      "leg": "europe",
+      "country": {
+        "code": "GB",
+        "name": "United Kingdom"
+      },
+      "city": "London",
+      "venue": "Tottenham Hotspur Stadium",
+      "dayNumber": 2,
+      "label": "London D2",
+      "coordinates": {
+        "latitude": 51.6043,
+        "longitude": -0.0664,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Save ME",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Epilogue: Young Forever",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-07-11-munich-d1",
+      "date": "2026-07-11",
+      "status": "completed",
+      "leg": "europe",
+      "country": {
+        "code": "DE",
+        "name": "Germany"
+      },
+      "city": "Munich",
+      "venue": "Allianz Arena",
+      "dayNumber": 1,
+      "label": "Munich D1",
+      "coordinates": {
+        "latitude": 48.2188,
+        "longitude": 11.6247,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Silver Spoon (Baepsae)",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Pied Piper",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-07-12-munich-d2",
+      "date": "2026-07-12",
+      "status": "completed",
+      "leg": "europe",
+      "country": {
+        "code": "DE",
+        "name": "Germany"
+      },
+      "city": "Munich",
+      "venue": "Allianz Arena",
+      "dayNumber": 2,
+      "label": "Munich D2",
+      "coordinates": {
+        "latitude": 48.2188,
+        "longitude": 11.6247,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Louder Than Bombs",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Blood Sweat & Tears",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-07-17-paris-d1",
+      "date": "2026-07-17",
+      "status": "completed",
+      "leg": "europe",
+      "country": {
+        "code": "FR",
+        "name": "France"
+      },
+      "city": "Paris",
+      "venue": "Stade de France",
+      "dayNumber": 1,
+      "label": "Paris D1",
+      "coordinates": {
+        "latitude": 48.9245,
+        "longitude": 2.3601,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Boy With Luv",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Jump",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-07-18-paris-d2",
+      "date": "2026-07-18",
+      "status": "completed",
+      "leg": "europe",
+      "country": {
+        "code": "FR",
+        "name": "France"
+      },
+      "city": "Paris",
+      "venue": "Stade de France",
+      "dayNumber": 2,
+      "label": "Paris D2",
+      "coordinates": {
+        "latitude": 48.9245,
+        "longitude": 2.3601,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "So What",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "We Are Bulletproof: The Eternal",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-08-01-east-rutherford-d1",
+      "date": "2026-08-01",
+      "status": "completed",
+      "leg": "north-america-ii",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "East Rutherford",
+      "venue": "MetLife Stadium",
+      "dayNumber": 1,
+      "label": "East Rutherford D1",
+      "coordinates": {
+        "latitude": 40.8135,
+        "longitude": -74.0745,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Dis-ease",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "RUN",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-08-02-east-rutherford-d2",
+      "date": "2026-08-02",
+      "status": "completed",
+      "leg": "north-america-ii",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "East Rutherford",
+      "venue": "MetLife Stadium",
+      "dayNumber": 2,
+      "label": "East Rutherford D2",
+      "coordinates": {
+        "latitude": 40.8135,
+        "longitude": -74.0745,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Autumn Leaves",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Go Go",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-08-05-foxborough-d1",
+      "date": "2026-08-05",
+      "status": "completed",
+      "leg": "north-america-ii",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "Foxborough",
+      "venue": "Gillette Stadium",
+      "dayNumber": 1,
+      "label": "Foxborough D1",
+      "coordinates": {
+        "latitude": 42.0909,
+        "longitude": -71.2643,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Paradise",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "No More Dream",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-08-06-foxborough-d2",
+      "date": "2026-08-06",
+      "status": "completed",
+      "leg": "north-america-ii",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "Foxborough",
+      "venue": "Gillette Stadium",
+      "dayNumber": 2,
+      "label": "Foxborough D2",
+      "coordinates": {
+        "latitude": 42.0909,
+        "longitude": -71.2643,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Make It Right",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "N.O",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-08-10-baltimore-d1",
+      "date": "2026-08-10",
+      "status": "completed",
+      "leg": "north-america-ii",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "Baltimore",
+      "venue": "M&T Bank Stadium",
+      "dayNumber": 1,
+      "label": "Baltimore D1",
+      "coordinates": {
+        "latitude": 39.278,
+        "longitude": -76.6227,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Telepathy",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Boy In Luv",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-08-11-baltimore-d2",
+      "date": "2026-08-11",
+      "status": "completed",
+      "leg": "north-america-ii",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "Baltimore",
+      "venue": "M&T Bank Stadium",
+      "dayNumber": 2,
+      "label": "Baltimore D2",
+      "coordinates": {
+        "latitude": 39.278,
+        "longitude": -76.6227,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Just One Day",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Best of Me",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-08-15-arlington-d1",
+      "date": "2026-08-15",
+      "status": "completed",
+      "leg": "north-america-ii",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "Arlington",
+      "venue": "AT&T Stadium",
+      "dayNumber": 1,
+      "label": "Arlington D1",
+      "coordinates": {
+        "latitude": 32.7473,
+        "longitude": -97.0945,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Permission to Dance",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Go Go",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-08-16-arlington-d2",
+      "date": "2026-08-16",
+      "status": "completed",
+      "leg": "north-america-ii",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "Arlington",
+      "venue": "AT&T Stadium",
+      "dayNumber": 2,
+      "label": "Arlington D2",
+      "coordinates": {
+        "latitude": 32.7473,
+        "longitude": -97.0945,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Butterfly",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "DNA",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-08-22-toronto-d1",
+      "date": "2026-08-22",
+      "status": "completed",
+      "leg": "north-america-ii",
+      "country": {
+        "code": "CA",
+        "name": "Canada"
+      },
+      "city": "Toronto",
+      "venue": "Rogers Stadium",
+      "dayNumber": 1,
+      "label": "Toronto D1",
+      "coordinates": {
+        "latitude": 43.7474,
+        "longitude": -79.469,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Outro: Wings",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "DOPE",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-08-23-toronto-d2",
+      "date": "2026-08-23",
+      "status": "completed",
+      "leg": "north-america-ii",
+      "country": {
+        "code": "CA",
+        "name": "Canada"
+      },
+      "city": "Toronto",
+      "venue": "Rogers Stadium",
+      "dayNumber": 2,
+      "label": "Toronto D2",
+      "coordinates": {
+        "latitude": 43.7474,
+        "longitude": -79.469,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "00:00 (Zero O'Clock)",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Outro: Tear",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-08-27-chicago-d1",
+      "date": "2026-08-27",
+      "status": "completed",
+      "leg": "north-america-ii",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "Chicago",
+      "venue": "Soldier Field",
+      "dayNumber": 1,
+      "label": "Chicago D1",
+      "coordinates": {
+        "latitude": 41.8623,
+        "longitude": -87.6167,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Tomorrow",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Hip Hop Phile",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-08-28-chicago-d2",
+      "date": "2026-08-28",
+      "status": "completed",
+      "leg": "north-america-ii",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "Chicago",
+      "venue": "Soldier Field",
+      "dayNumber": 2,
+      "label": "Chicago D2",
+      "coordinates": {
+        "latitude": 41.8623,
+        "longitude": -87.6167,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "134340",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Mikrokosmos",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-09-01-los-angeles-d1",
+      "date": "2026-09-01",
+      "status": "completed",
+      "leg": "north-america-ii",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "Los Angeles",
+      "venue": "SoFi Stadium",
+      "dayNumber": 1,
+      "label": "Los Angeles D1",
+      "coordinates": {
+        "latitude": 33.9535,
+        "longitude": -118.3392,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Boy In Luv",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Magic Shop",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-09-02-los-angeles-d2",
+      "date": "2026-09-02",
+      "status": "completed",
+      "leg": "north-america-ii",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "Los Angeles",
+      "venue": "SoFi Stadium",
+      "dayNumber": 2,
+      "label": "Los Angeles D2",
+      "coordinates": {
+        "latitude": 33.9535,
+        "longitude": -118.3392,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Love Maze",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Silver Spoon (Baepsae)",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-09-05-los-angeles-d3",
+      "date": "2026-09-05",
+      "status": "completed",
+      "leg": "north-america-ii",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "Los Angeles",
+      "venue": "SoFi Stadium",
+      "dayNumber": 3,
+      "label": "Los Angeles D3",
+      "coordinates": {
+        "latitude": 33.9535,
+        "longitude": -118.3392,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "HOME",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Pied Piper",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-09-06-los-angeles-d4",
+      "date": "2026-09-06",
+      "status": "completed",
+      "leg": "north-america-ii",
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "city": "Los Angeles",
+      "venue": "SoFi Stadium",
+      "dayNumber": 4,
+      "label": "Los Angeles D4",
+      "coordinates": {
+        "latitude": 33.9535,
+        "longitude": -118.3392,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "Whalien 52",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "Spring Day",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kpopgo-consolidated",
+            "honey-pop-consolidated",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-na-europe",
+        "official-tour-site",
+        "ap-original-calendar"
+      ]
+    },
+    {
+      "id": "2026-10-02-bogota-d1",
+      "date": "2026-10-02",
+      "status": "completed",
+      "leg": "latin-america",
+      "country": {
+        "code": "CO",
+        "name": "Colombia"
+      },
+      "city": "Bogotá",
+      "venue": "Estadio El Campín",
+      "dayNumber": 1,
+      "label": "Bogotá D1",
+      "coordinates": {
+        "latitude": 4.6459,
+        "longitude": -74.0775,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "I'm Fine",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "bogota-d1-local-report",
+            "setlistfm-artist"
+          ]
+        },
+        {
+          "title": "So What",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "bogota-d1-local-report",
+            "setlistfm-artist"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-latam",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-10-03-bogota-d2",
+      "date": "2026-10-03",
+      "status": "completed",
+      "leg": "latin-america",
+      "country": {
+        "code": "CO",
+        "name": "Colombia"
+      },
+      "city": "Bogotá",
+      "venue": "Estadio El Campín",
+      "dayNumber": 2,
+      "label": "Bogotá D2",
+      "coordinates": {
+        "latitude": 4.6459,
+        "longitude": -74.0775,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [
+        {
+          "title": "We Are Bulletproof Pt.2",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "bogota-d2-livenation",
+            "bogota-d2-setlistfm"
+          ]
+        },
+        {
+          "title": "Mikrokosmos",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "bogota-d2-livenation",
+            "bogota-d2-setlistfm"
+          ]
+        }
+      ],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-latam",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-10-07-lima-d1",
+      "date": "2026-10-07",
+      "status": "upcoming",
+      "leg": "latin-america",
+      "country": {
+        "code": "PE",
+        "name": "Peru"
+      },
+      "city": "Lima",
+      "venue": "Estadio San Marcos",
+      "dayNumber": 1,
+      "label": "Lima D1",
+      "coordinates": {
+        "latitude": -12.056,
+        "longitude": -77.0844,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-latam-additional",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-10-09-lima-d2",
+      "date": "2026-10-09",
+      "status": "upcoming",
+      "leg": "latin-america",
+      "country": {
+        "code": "PE",
+        "name": "Peru"
+      },
+      "city": "Lima",
+      "venue": "Estadio San Marcos",
+      "dayNumber": 2,
+      "label": "Lima D2",
+      "coordinates": {
+        "latitude": -12.056,
+        "longitude": -77.0844,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-latam",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-10-10-lima-d3",
+      "date": "2026-10-10",
+      "status": "upcoming",
+      "leg": "latin-america",
+      "country": {
+        "code": "PE",
+        "name": "Peru"
+      },
+      "city": "Lima",
+      "venue": "Estadio San Marcos",
+      "dayNumber": 3,
+      "label": "Lima D3",
+      "coordinates": {
+        "latitude": -12.056,
+        "longitude": -77.0844,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-latam",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-10-14-santiago-d1",
+      "date": "2026-10-14",
+      "status": "upcoming",
+      "leg": "latin-america",
+      "country": {
+        "code": "CL",
+        "name": "Chile"
+      },
+      "city": "Santiago",
+      "venue": "Estadio Nacional",
+      "dayNumber": 1,
+      "label": "Santiago D1",
+      "coordinates": {
+        "latitude": -33.4644,
+        "longitude": -70.6106,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-latam-additional",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-10-16-santiago-d2",
+      "date": "2026-10-16",
+      "status": "upcoming",
+      "leg": "latin-america",
+      "country": {
+        "code": "CL",
+        "name": "Chile"
+      },
+      "city": "Santiago",
+      "venue": "Estadio Nacional",
+      "dayNumber": 2,
+      "label": "Santiago D2",
+      "coordinates": {
+        "latitude": -33.4644,
+        "longitude": -70.6106,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-latam",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-10-17-santiago-d3",
+      "date": "2026-10-17",
+      "status": "upcoming",
+      "leg": "latin-america",
+      "country": {
+        "code": "CL",
+        "name": "Chile"
+      },
+      "city": "Santiago",
+      "venue": "Estadio Nacional",
+      "dayNumber": 3,
+      "label": "Santiago D3",
+      "coordinates": {
+        "latitude": -33.4644,
+        "longitude": -70.6106,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-latam",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-10-21-buenos-aires-d1",
+      "date": "2026-10-21",
+      "status": "upcoming",
+      "leg": "latin-america",
+      "country": {
+        "code": "AR",
+        "name": "Argentina"
+      },
+      "city": "Buenos Aires",
+      "venue": "Estadio Único de La Plata",
+      "dayNumber": 1,
+      "label": "Buenos Aires D1",
+      "coordinates": {
+        "latitude": -34.9139,
+        "longitude": -57.989,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-latam-additional",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-10-23-buenos-aires-d2",
+      "date": "2026-10-23",
+      "status": "upcoming",
+      "leg": "latin-america",
+      "country": {
+        "code": "AR",
+        "name": "Argentina"
+      },
+      "city": "Buenos Aires",
+      "venue": "Estadio Único de La Plata",
+      "dayNumber": 2,
+      "label": "Buenos Aires D2",
+      "coordinates": {
+        "latitude": -34.9139,
+        "longitude": -57.989,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-latam",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-10-24-buenos-aires-d3",
+      "date": "2026-10-24",
+      "status": "upcoming",
+      "leg": "latin-america",
+      "country": {
+        "code": "AR",
+        "name": "Argentina"
+      },
+      "city": "Buenos Aires",
+      "venue": "Estadio Único de La Plata",
+      "dayNumber": 3,
+      "label": "Buenos Aires D3",
+      "coordinates": {
+        "latitude": -34.9139,
+        "longitude": -57.989,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-latam",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-10-28-sao-paulo-d1",
+      "date": "2026-10-28",
+      "status": "upcoming",
+      "leg": "latin-america",
+      "country": {
+        "code": "BR",
+        "name": "Brazil"
+      },
+      "city": "São Paulo",
+      "venue": "Estádio do MorumBIS",
+      "dayNumber": 1,
+      "label": "São Paulo D1",
+      "coordinates": {
+        "latitude": -23.6001,
+        "longitude": -46.7202,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-latam",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-10-30-sao-paulo-d2",
+      "date": "2026-10-30",
+      "status": "upcoming",
+      "leg": "latin-america",
+      "country": {
+        "code": "BR",
+        "name": "Brazil"
+      },
+      "city": "São Paulo",
+      "venue": "Estádio do MorumBIS",
+      "dayNumber": 2,
+      "label": "São Paulo D2",
+      "coordinates": {
+        "latitude": -23.6001,
+        "longitude": -46.7202,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-latam",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-10-31-sao-paulo-d3",
+      "date": "2026-10-31",
+      "status": "upcoming",
+      "leg": "latin-america",
+      "country": {
+        "code": "BR",
+        "name": "Brazil"
+      },
+      "city": "São Paulo",
+      "venue": "Estádio do MorumBIS",
+      "dayNumber": 3,
+      "label": "São Paulo D3",
+      "coordinates": {
+        "latitude": -23.6001,
+        "longitude": -46.7202,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-latam",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-11-19-kaohsiung-d1",
+      "date": "2026-11-19",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "TW",
+        "name": "Taiwan"
+      },
+      "city": "Kaohsiung",
+      "venue": "Kaohsiung National Stadium",
+      "dayNumber": 1,
+      "label": "Kaohsiung D1",
+      "coordinates": {
+        "latitude": 22.702,
+        "longitude": 120.2946,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-asia-australia",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-11-21-kaohsiung-d2",
+      "date": "2026-11-21",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "TW",
+        "name": "Taiwan"
+      },
+      "city": "Kaohsiung",
+      "venue": "Kaohsiung National Stadium",
+      "dayNumber": 2,
+      "label": "Kaohsiung D2",
+      "coordinates": {
+        "latitude": 22.702,
+        "longitude": 120.2946,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-asia-australia",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-11-22-kaohsiung-d3",
+      "date": "2026-11-22",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "TW",
+        "name": "Taiwan"
+      },
+      "city": "Kaohsiung",
+      "venue": "Kaohsiung National Stadium",
+      "dayNumber": 3,
+      "label": "Kaohsiung D3",
+      "coordinates": {
+        "latitude": 22.702,
+        "longitude": 120.2946,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-asia-australia",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-12-03-bangkok-d1",
+      "date": "2026-12-03",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "TH",
+        "name": "Thailand"
+      },
+      "city": "Bangkok",
+      "venue": "Rajamangala National Stadium",
+      "dayNumber": 1,
+      "label": "Bangkok D1",
+      "coordinates": {
+        "latitude": 13.7554,
+        "longitude": 100.6222,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-asia-australia",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-12-05-bangkok-d2",
+      "date": "2026-12-05",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "TH",
+        "name": "Thailand"
+      },
+      "city": "Bangkok",
+      "venue": "Rajamangala National Stadium",
+      "dayNumber": 2,
+      "label": "Bangkok D2",
+      "coordinates": {
+        "latitude": 13.7554,
+        "longitude": 100.6222,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-asia-australia",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-12-06-bangkok-d3",
+      "date": "2026-12-06",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "TH",
+        "name": "Thailand"
+      },
+      "city": "Bangkok",
+      "venue": "Rajamangala National Stadium",
+      "dayNumber": 3,
+      "label": "Bangkok D3",
+      "coordinates": {
+        "latitude": 13.7554,
+        "longitude": 100.6222,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-asia-australia",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-12-12-kuala-lumpur-d1",
+      "date": "2026-12-12",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "MY",
+        "name": "Malaysia"
+      },
+      "city": "Kuala Lumpur",
+      "venue": "TM Stadium Nasional",
+      "dayNumber": 1,
+      "label": "Kuala Lumpur D1",
+      "coordinates": {
+        "latitude": 3.0546,
+        "longitude": 101.691,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-asia-australia",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-12-13-kuala-lumpur-d2",
+      "date": "2026-12-13",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "MY",
+        "name": "Malaysia"
+      },
+      "city": "Kuala Lumpur",
+      "venue": "TM Stadium Nasional",
+      "dayNumber": 2,
+      "label": "Kuala Lumpur D2",
+      "coordinates": {
+        "latitude": 3.0546,
+        "longitude": 101.691,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-asia-australia",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-12-17-singapore-d1",
+      "date": "2026-12-17",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "SG",
+        "name": "Singapore"
+      },
+      "city": "Singapore",
+      "venue": "National Stadium",
+      "dayNumber": 1,
+      "label": "Singapore D1",
+      "coordinates": {
+        "latitude": 1.3042,
+        "longitude": 103.8744,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-asia-australia",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-12-19-singapore-d2",
+      "date": "2026-12-19",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "SG",
+        "name": "Singapore"
+      },
+      "city": "Singapore",
+      "venue": "National Stadium",
+      "dayNumber": 2,
+      "label": "Singapore D2",
+      "coordinates": {
+        "latitude": 1.3042,
+        "longitude": 103.8744,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-asia-australia",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-12-20-singapore-d3",
+      "date": "2026-12-20",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "SG",
+        "name": "Singapore"
+      },
+      "city": "Singapore",
+      "venue": "National Stadium",
+      "dayNumber": 3,
+      "label": "Singapore D3",
+      "coordinates": {
+        "latitude": 1.3042,
+        "longitude": 103.8744,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-asia-australia",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-12-22-singapore-d4",
+      "date": "2026-12-22",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "SG",
+        "name": "Singapore"
+      },
+      "city": "Singapore",
+      "venue": "National Stadium",
+      "dayNumber": 4,
+      "label": "Singapore D4",
+      "coordinates": {
+        "latitude": 1.3042,
+        "longitude": 103.8744,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-asia-australia",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-12-26-jakarta-d1",
+      "date": "2026-12-26",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "ID",
+        "name": "Indonesia"
+      },
+      "city": "Jakarta",
+      "venue": "Gelora Bung Karno Main Stadium",
+      "dayNumber": 1,
+      "label": "Jakarta D1",
+      "coordinates": {
+        "latitude": -6.2186,
+        "longitude": 106.8026,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-asia-australia",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-12-27-jakarta-d2",
+      "date": "2026-12-27",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "ID",
+        "name": "Indonesia"
+      },
+      "city": "Jakarta",
+      "venue": "Gelora Bung Karno Main Stadium",
+      "dayNumber": 2,
+      "label": "Jakarta D2",
+      "coordinates": {
+        "latitude": -6.2186,
+        "longitude": 106.8026,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-asia-australia",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2026-12-29-jakarta-d3",
+      "date": "2026-12-29",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "ID",
+        "name": "Indonesia"
+      },
+      "city": "Jakarta",
+      "venue": "Gelora Bung Karno Main Stadium",
+      "dayNumber": 3,
+      "label": "Jakarta D3",
+      "coordinates": {
+        "latitude": -6.2186,
+        "longitude": 106.8026,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-jakarta-bulacan-additional",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2027-02-10-melbourne-d1",
+      "date": "2027-02-10",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "AU",
+        "name": "Australia"
+      },
+      "city": "Melbourne",
+      "venue": "Marvel Stadium",
+      "dayNumber": 1,
+      "label": "Melbourne D1",
+      "coordinates": {
+        "latitude": -37.8165,
+        "longitude": 144.9475,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-melbourne-additional",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2027-02-12-melbourne-d2",
+      "date": "2027-02-12",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "AU",
+        "name": "Australia"
+      },
+      "city": "Melbourne",
+      "venue": "Marvel Stadium",
+      "dayNumber": 2,
+      "label": "Melbourne D2",
+      "coordinates": {
+        "latitude": -37.8165,
+        "longitude": 144.9475,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-asia-australia",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2027-02-13-melbourne-d3",
+      "date": "2027-02-13",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "AU",
+        "name": "Australia"
+      },
+      "city": "Melbourne",
+      "venue": "Marvel Stadium",
+      "dayNumber": 3,
+      "label": "Melbourne D3",
+      "coordinates": {
+        "latitude": -37.8165,
+        "longitude": 144.9475,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-asia-australia",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2027-02-20-sydney-d1",
+      "date": "2027-02-20",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "AU",
+        "name": "Australia"
+      },
+      "city": "Sydney",
+      "venue": "Accor Stadium",
+      "dayNumber": 1,
+      "label": "Sydney D1",
+      "coordinates": {
+        "latitude": -33.8474,
+        "longitude": 151.0634,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-asia-australia",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2027-02-21-sydney-d2",
+      "date": "2027-02-21",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "AU",
+        "name": "Australia"
+      },
+      "city": "Sydney",
+      "venue": "Accor Stadium",
+      "dayNumber": 2,
+      "label": "Sydney D2",
+      "coordinates": {
+        "latitude": -33.8474,
+        "longitude": 151.0634,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-asia-australia",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2027-03-04-hong-kong-d1",
+      "date": "2027-03-04",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "HK",
+        "name": "Hong Kong"
+      },
+      "city": "Hong Kong",
+      "venue": "Kai Tak Stadium",
+      "dayNumber": 1,
+      "label": "Hong Kong D1",
+      "coordinates": {
+        "latitude": 22.3193,
+        "longitude": 114.2016,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-asia-australia",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2027-03-06-hong-kong-d2",
+      "date": "2027-03-06",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "HK",
+        "name": "Hong Kong"
+      },
+      "city": "Hong Kong",
+      "venue": "Kai Tak Stadium",
+      "dayNumber": 2,
+      "label": "Hong Kong D2",
+      "coordinates": {
+        "latitude": 22.3193,
+        "longitude": 114.2016,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-asia-australia",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2027-03-07-hong-kong-d3",
+      "date": "2027-03-07",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "HK",
+        "name": "Hong Kong"
+      },
+      "city": "Hong Kong",
+      "venue": "Kai Tak Stadium",
+      "dayNumber": 3,
+      "label": "Hong Kong D3",
+      "coordinates": {
+        "latitude": 22.3193,
+        "longitude": 114.2016,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-asia-australia",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2027-03-13-bulacan-d1",
+      "date": "2027-03-13",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "PH",
+        "name": "Philippines"
+      },
+      "city": "Bulacan",
+      "venue": "Philippine Sports Stadium",
+      "dayNumber": 1,
+      "label": "Bulacan D1",
+      "coordinates": {
+        "latitude": 14.7943,
+        "longitude": 120.954,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-asia-australia",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2027-03-14-bulacan-d2",
+      "date": "2027-03-14",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "PH",
+        "name": "Philippines"
+      },
+      "city": "Bulacan",
+      "venue": "Philippine Sports Stadium",
+      "dayNumber": 2,
+      "label": "Bulacan D2",
+      "coordinates": {
+        "latitude": 14.7943,
+        "longitude": 120.954,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-asia-australia",
+        "official-tour-site"
+      ]
+    },
+    {
+      "id": "2027-03-16-bulacan-d3",
+      "date": "2027-03-16",
+      "status": "upcoming",
+      "leg": "asia-australia",
+      "country": {
+        "code": "PH",
+        "name": "Philippines"
+      },
+      "city": "Bulacan",
+      "venue": "Philippine Sports Stadium",
+      "dayNumber": 3,
+      "label": "Bulacan D3",
+      "coordinates": {
+        "latitude": 14.7943,
+        "longitude": 120.954,
+        "precision": "venue-approximate"
+      },
+      "surpriseSongs": [],
+      "specialPerformances": [],
+      "scheduleSourceIds": [
+        "weverse-jakarta-bulacan-additional",
+        "official-tour-site"
+      ]
+    }
+  ]
+}
