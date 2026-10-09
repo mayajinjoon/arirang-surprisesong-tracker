@@ -1,10 +1,10 @@
 # Build and test report
 
-Verified on 2026-10-04 before local review. No public deployment was performed.
+Initial full review completed on 2026-10-04. Dataset checks, application smoke tests and the production build were rerun successfully on 2026-10-09 for the Lima D1 update.
 
 ## Automated checks
 
-- Dataset validation: passed — 88 official shows, 50 completed, 38 upcoming, 59 unique surprise songs.
+- Dataset validation: passed — 88 official shows, 51 completed, 37 upcoming, 59 unique surprise songs.
 - Application smoke tests: passed — canonical-data loading, chronological first appearances, filters, accessibility hooks, responsive CSS, print CSS, privacy constraints, and GitHub Pages relative paths.
 
 Run both checks with the bundled Node.js runtime or any current Node.js installation:
@@ -21,7 +21,7 @@ node tests/smoke.mjs
 - Interactive map: 34 data-derived city choices; completed and upcoming stops share the same canonical records.
 - City details: Bogotá D1 and D2 were checked, including the validated D2 pairing `We Are Bulletproof Pt.2` → `Mikrokosmos`.
 - Songs view: search, occurrence totals, and first-appearance output checked with `Spring Day`.
-- Full Tour view: the Upcoming filter returned all 38 announced future shows without song placeholders.
+- Full Tour view: the Upcoming filter returned all 37 announced future shows without song placeholders.
 - Print view: country-scoped output checked with Brazil; print-only document content and print stylesheet were present.
 - Keyboard: tablist arrow-key movement updates focus, selection, and the visible panel together.
 - Browser console: no warnings or errors after loading and exercising the main views.

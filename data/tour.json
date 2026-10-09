@@ -9,12 +9,12 @@
     "fanMade": true
   },
   "dataset": {
-    "asOf": "2026-10-04",
-    "completedThrough": "2026-10-03",
-    "completedThroughLabel": "Bogotá D2",
+    "asOf": "2026-10-09",
+    "completedThrough": "2026-10-07",
+    "completedThroughLabel": "Lima D1",
     "totalShows": 88,
-    "completedShows": 50,
-    "upcomingShows": 38,
+    "completedShows": 51,
+    "upcomingShows": 37,
     "confidenceNote": "Official BIGHIT MUSIC/HYBE/Weverse sources govern calendar data. Surprise-song data is independently corroborated because no official consolidated song ledger was found."
   },
   "rules": {
@@ -223,6 +223,33 @@
       "type": "show-setlist",
       "authority": "secondary",
       "accessedAt": "2026-10-04"
+    },
+    {
+      "id": "lima-d1-setlistfm",
+      "title": "BTS at Estadio San Marcos — 7 Oct 2026",
+      "publisher": "setlist.fm",
+      "url": "https://www.setlist.fm/setlist/bts/2026/estadio-san-marcos-lima-peru-1b763d30.html",
+      "type": "show-setlist",
+      "authority": "secondary",
+      "accessedAt": "2026-10-09"
+    },
+    {
+      "id": "lima-d1-infobae",
+      "title": "Setlist de BTS en Lima — primer concierto",
+      "publisher": "Infobae Perú",
+      "url": "https://www.infobae.com/peru/2026/10/09/setlist-de-bts-en-lima-las-canciones-que-cantaran-este-9-y-10-de-octubre-en-el-estadio-san-marcos/",
+      "type": "local-concert-report",
+      "authority": "secondary",
+      "accessedAt": "2026-10-09"
+    },
+    {
+      "id": "lima-d1-fantree",
+      "title": "BTS ARIRANG Surprise Songs — Lima D1",
+      "publisher": "Fantree",
+      "url": "https://fantree.org/bts/p/bts-arirang-setlist-surprise-song-tracker",
+      "type": "consolidated-setlist-tracker",
+      "authority": "secondary",
+      "accessedAt": "2026-10-09"
     }
   ],
   "shows": [
@@ -2491,7 +2518,7 @@
     {
       "id": "2026-10-07-lima-d1",
       "date": "2026-10-07",
-      "status": "upcoming",
+      "status": "completed",
       "leg": "latin-america",
       "country": {
         "code": "PE",
@@ -2506,7 +2533,26 @@
         "longitude": -77.0844,
         "precision": "venue-approximate"
       },
-      "surpriseSongs": [],
+      "surpriseSongs": [
+        {
+          "title": "HOME",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "lima-d1-setlistfm",
+            "lima-d1-infobae",
+            "lima-d1-fantree"
+          ]
+        },
+        {
+          "title": "Outro: Wings",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "lima-d1-setlistfm",
+            "lima-d1-infobae",
+            "lima-d1-fantree"
+          ]
+        }
+      ],
       "specialPerformances": [],
       "scheduleSourceIds": [
         "weverse-latam-additional",

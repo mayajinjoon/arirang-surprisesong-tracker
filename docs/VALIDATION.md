@@ -2,7 +2,7 @@
 
 ## Escopo e corte
 
-O dataset foi fechado em **4 de outubro de 2026**, com músicas confirmadas até **Bogotá D2 (3 de outubro de 2026)**. Ele contém **88 shows**: 50 concluídos e 38 oficialmente anunciados como futuros.
+O dataset foi atualizado em **9 de outubro de 2026**, com músicas confirmadas até **Lima D1 (7 de outubro de 2026)**. Ele contém **88 shows**: 51 concluídos e 37 oficialmente anunciados como futuros.
 
 ## Hierarquia de fontes
 
@@ -17,6 +17,7 @@ Para surprise songs, não foi encontrada uma tabela oficial consolidada. Foram u
 ## Correções feitas durante a auditoria
 
 - **Bogotá D2:** o registro anterior dizia `Mikrokosmos → We Are Bulletproof: The Eternal`. As fontes atualizadas convergem em **`We Are Bulletproof Pt.2 → Mikrokosmos`**. O JSON contém a versão corrigida.
+- **Lima D1:** setlist.fm, Infobae Perú e o tracker Fantree convergem em **`HOME → Outro: Wings`**. Ambas são repetições; a regra cronológica mantém suas primeiras aparições anteriores.
 - **Tampa D1:** ordem validada como `Permission to Dance → Magic Shop`.
 - **Stanford D3:** ordem validada como `I NEED U → No More Dream`.
 - **Las Vegas D4:** ordem validada como `Boyz With Fun → Danger`.
@@ -65,4 +66,6 @@ As coordenadas são aproximações do venue, adequadas para marcadores de mapa. 
 - [KPopGo — tracker consolidado](https://kpopgo.art/news/bts-arirang-surprise-songs-tracker)
 - [The Honey POP — tracker consolidado](https://thehoneypop.com/2026/04/13/bts-surprise-songs-arirang-world-tour/)
 - [Live Nation — setlist de Bogotá D2](https://www.livenation.com/artist/K8vZ917KpXV/bts-events)
-
+- [setlist.fm — Lima D1](https://www.setlist.fm/setlist/bts/2026/estadio-san-marcos-lima-peru-1b763d30.html)
+- [Infobae Perú — setlist do primeiro show em Lima](https://www.infobae.com/peru/2026/10/09/setlist-de-bts-en-lima-las-canciones-que-cantaran-este-9-y-10-de-octubre-en-el-estadio-san-marcos/)
+- [Fantree — tracker de surprise songs](https://fantree.org/bts/p/bts-arirang-setlist-surprise-song-tracker)

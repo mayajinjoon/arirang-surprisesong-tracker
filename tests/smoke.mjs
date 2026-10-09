@@ -15,19 +15,23 @@ assert.match(html, /https:\/\/www\.tiktok\.com\/@mayajoonofficial/, 'TikTok prof
 assert.match(html, /rel="noopener noreferrer"/, 'External TikTok link must not retain opener access');
 
 assert.equal(model.shows.length, 88);
-assert.equal(model.completed.length, 50);
-assert.equal(model.upcoming.length, 38);
+assert.equal(model.completed.length, 51);
+assert.equal(model.upcoming.length, 37);
 assert.equal(model.occurrencesBySong.size, 59);
-assert.equal(model.upcoming[0].label, 'Lima D1');
+assert.equal(model.upcoming[0].label, 'Lima D2');
 assert.equal(model.shows.at(-1).label, 'Bulacan D3');
 assert.ok(model.upcoming.every(show => show.surpriseSongs.length === 0), 'future shows must not contain songs');
 
 const bogota1 = model.shows.find(show => show.id === '2026-10-02-bogota-d1');
 const bogota2 = model.shows.find(show => show.id === '2026-10-03-bogota-d2');
+const lima1 = model.shows.find(show => show.id === '2026-10-07-lima-d1');
 assert.deepEqual(bogota2.surpriseSongs.map(song => song.title), ['We Are Bulletproof Pt.2', 'Mikrokosmos']);
+assert.deepEqual(lima1.surpriseSongs.map(song => song.title), ['HOME', 'Outro: Wings']);
 assert.equal(isFirstAppearance(model, bogota1.id, "I'm Fine"), true);
 assert.equal(isFirstAppearance(model, bogota2.id, 'We Are Bulletproof Pt.2'), false);
 assert.equal(isFirstAppearance(model, bogota2.id, 'Mikrokosmos'), false);
+assert.equal(isFirstAppearance(model, lima1.id, 'HOME'), false);
+assert.equal(isFirstAppearance(model, lima1.id, 'Outro: Wings'), false);
 assert.equal(canonicalSongKey('  Spring   Day '), 'spring day');
 
 for (const city of model.cities.values()) {
