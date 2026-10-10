@@ -10,11 +10,11 @@
   },
   "dataset": {
     "asOf": "2026-10-10",
-    "completedThrough": "2026-10-07",
-    "completedThroughLabel": "Lima D1",
+    "completedThrough": "2026-10-09",
+    "completedThroughLabel": "Lima D2",
     "totalShows": 88,
-    "completedShows": 51,
-    "upcomingShows": 37,
+    "completedShows": 52,
+    "upcomingShows": 36,
     "confidenceNote": "Official BIGHIT MUSIC/HYBE/Weverse sources govern calendar data. Surprise-song data is independently corroborated because no official consolidated song ledger was found."
   },
   "rules": {
