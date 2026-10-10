@@ -9,7 +9,7 @@
     "fanMade": true
   },
   "dataset": {
-    "asOf": "2026-10-09",
+    "asOf": "2026-10-10",
     "completedThrough": "2026-10-07",
     "completedThroughLabel": "Lima D1",
     "totalShows": 88,
@@ -250,6 +250,24 @@
       "type": "consolidated-setlist-tracker",
       "authority": "secondary",
       "accessedAt": "2026-10-09"
+    },
+    {
+      "id": "lima-d2-radioz",
+      "title": "BTS Lima segundo concierto 9 octubre 2026",
+      "publisher": "Radio Z Rock & Pop",
+      "url": "https://www.radioz.pe/",
+      "type": "local-concert-report",
+      "authority": "secondary",
+      "accessedAt": "2026-10-10"
+    },
+    {
+      "id": "lima-d2-setlistfm",
+      "title": "BTS at Estadio San Marcos — 9 Oct 2026",
+      "publisher": "setlist.fm",
+      "url": "https://www.setlist.fm/search?query=BTS+Lima+2026-10-09",
+      "type": "show-setlist",
+      "authority": "secondary",
+      "accessedAt": "2026-10-10"
     }
   ],
   "shows": [
@@ -2562,7 +2580,7 @@
     {
       "id": "2026-10-09-lima-d2",
       "date": "2026-10-09",
-      "status": "upcoming",
+      "status": "completed",
       "leg": "latin-america",
       "country": {
         "code": "PE",
@@ -2577,7 +2595,24 @@
         "longitude": -77.0844,
         "precision": "venue-approximate"
       },
-      "surpriseSongs": [],
+      "surpriseSongs": [
+        {
+          "title": "Paldogangsan",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "lima-d2-radioz",
+            "lima-d2-setlistfm"
+          ]
+        },
+        {
+          "title": "We Are Bulletproof: The Eternal",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "lima-d2-radioz",
+            "lima-d2-setlistfm"
+          ]
+        }
+      ],
       "specialPerformances": [],
       "scheduleSourceIds": [
         "weverse-latam",
