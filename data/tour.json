@@ -9,12 +9,12 @@
     "fanMade": true
   },
   "dataset": {
-    "asOf": "2026-10-10",
-    "completedThrough": "2026-10-09",
-    "completedThroughLabel": "Lima D2",
+    "asOf": "2026-10-11",
+    "completedThrough": "2026-10-10",
+    "completedThroughLabel": "Lima D3",
     "totalShows": 88,
-    "completedShows": 52,
-    "upcomingShows": 36,
+    "completedShows": 53,
+    "upcomingShows": 35,
     "confidenceNote": "Official BIGHIT MUSIC/HYBE/Weverse sources govern calendar data. Surprise-song data is independently corroborated because no official consolidated song ledger was found."
   },
   "rules": {
@@ -268,6 +268,15 @@
       "type": "show-setlist",
       "authority": "secondary",
       "accessedAt": "2026-10-10"
+    },
+    {
+      "id": "lima-d3-user-report",
+      "title": "Lima D3 surprise songs — user-reported, awaiting independent corroboration",
+      "publisher": "Tracker contributor report",
+      "url": "https://github.com/mayajinjoon/arirang-surprisesong-tracker/commits/main/",
+      "type": "fan-reported-setlist",
+      "authority": "secondary",
+      "accessedAt": "2026-10-11"
     }
   ],
   "shows": [
@@ -2622,7 +2631,7 @@
     {
       "id": "2026-10-10-lima-d3",
       "date": "2026-10-10",
-      "status": "upcoming",
+      "status": "completed",
       "leg": "latin-america",
       "country": {
         "code": "PE",
@@ -2637,7 +2646,22 @@
         "longitude": -77.0844,
         "precision": "venue-approximate"
       },
-      "surpriseSongs": [],
+      "surpriseSongs": [
+        {
+          "title": "House of Cards",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "lima-d3-user-report"
+          ]
+        },
+        {
+          "title": "UGH!",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "lima-d3-user-report"
+          ]
+        }
+      ],
       "specialPerformances": [],
       "scheduleSourceIds": [
         "weverse-latam",
