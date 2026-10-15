@@ -9,12 +9,12 @@
     "fanMade": true
   },
   "dataset": {
-    "asOf": "2026-10-11",
-    "completedThrough": "2026-10-10",
-    "completedThroughLabel": "Lima D3",
+    "asOf": "2026-10-15",
+    "completedThrough": "2026-10-14",
+    "completedThroughLabel": "Santiago D1",
     "totalShows": 88,
-    "completedShows": 53,
-    "upcomingShows": 35,
+    "completedShows": 54,
+    "upcomingShows": 34,
     "confidenceNote": "Official BIGHIT MUSIC/HYBE/Weverse sources govern calendar data. Surprise-song data is independently corroborated because no official consolidated song ledger was found."
   },
   "rules": {
@@ -277,6 +277,24 @@
       "type": "fan-reported-setlist",
       "authority": "secondary",
       "accessedAt": "2026-10-11"
+    },
+    {
+      "id": "santiago-d1-livenation",
+      "title": "BTS ARIRANG Santiago Oct 14 2026 featured setlist",
+      "publisher": "Live Nation",
+      "url": "https://web-b.origin.livenation.com/artist/K8vZ917KpXV/bts-events",
+      "type": "show-setlist",
+      "authority": "secondary",
+      "accessedAt": "2026-10-15"
+    },
+    {
+      "id": "santiago-d1-1kpop",
+      "title": "BTS vuelve a Chile tras nueve años: canciones sorpresa",
+      "publisher": "1KPOP Chile",
+      "url": "https://1kpop.cl/bts-chile-2026-primer-concierto-momentos/",
+      "type": "local-concert-report",
+      "authority": "secondary",
+      "accessedAt": "2026-10-15"
     }
   ],
   "shows": [
@@ -2671,7 +2689,7 @@
     {
       "id": "2026-10-14-santiago-d1",
       "date": "2026-10-14",
-      "status": "upcoming",
+      "status": "completed",
       "leg": "latin-america",
       "country": {
         "code": "CL",
@@ -2686,7 +2704,24 @@
         "longitude": -70.6106,
         "precision": "venue-approximate"
       },
-      "surpriseSongs": [],
+      "surpriseSongs": [
+        {
+          "title": "RUN",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "santiago-d1-livenation",
+            "santiago-d1-1kpop"
+          ]
+        },
+        {
+          "title": "Save ME",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "santiago-d1-livenation",
+            "santiago-d1-1kpop"
+          ]
+        }
+      ],
       "specialPerformances": [],
       "scheduleSourceIds": [
         "weverse-latam-additional",
