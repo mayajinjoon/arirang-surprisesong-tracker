@@ -9,12 +9,12 @@
     "fanMade": true
   },
   "dataset": {
-    "asOf": "2026-10-15",
-    "completedThrough": "2026-10-14",
-    "completedThroughLabel": "Santiago D1",
+    "asOf": "2026-10-17",
+    "completedThrough": "2026-10-16",
+    "completedThroughLabel": "Santiago D2",
     "totalShows": 88,
-    "completedShows": 54,
-    "upcomingShows": 34,
+    "completedShows": 55,
+    "upcomingShows": 33,
     "confidenceNote": "Official BIGHIT MUSIC/HYBE/Weverse sources govern calendar data. Surprise-song data is independently corroborated because no official consolidated song ledger was found."
   },
   "rules": {
@@ -295,6 +295,15 @@
       "type": "local-concert-report",
       "authority": "secondary",
       "accessedAt": "2026-10-15"
+    },
+    {
+      "id": "santiago-d2-livenation",
+      "title": "BTS ARIRANG Santiago D2 — surprise songs 16 October 2026",
+      "publisher": "Live Nation",
+      "url": "https://www.livenation.com/artist/K8vZ917KpXV/bts-events",
+      "type": "show-setlist",
+      "authority": "secondary",
+      "accessedAt": "2026-10-17"
     }
   ],
   "shows": [
@@ -2731,7 +2740,7 @@
     {
       "id": "2026-10-16-santiago-d2",
       "date": "2026-10-16",
-      "status": "upcoming",
+      "status": "completed",
       "leg": "latin-america",
       "country": {
         "code": "CL",
@@ -2746,7 +2755,22 @@
         "longitude": -70.6106,
         "precision": "venue-approximate"
       },
-      "surpriseSongs": [],
+      "surpriseSongs": [
+        {
+          "title": "Telepathy",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "santiago-d2-livenation"
+          ]
+        },
+        {
+          "title": "Heartbeat",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "santiago-d2-livenation"
+          ]
+        }
+      ],
       "specialPerformances": [],
       "scheduleSourceIds": [
         "weverse-latam",
