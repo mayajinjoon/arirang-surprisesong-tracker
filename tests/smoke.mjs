@@ -15,10 +15,10 @@ assert.match(html, /https:\/\/www\.tiktok\.com\/@mayajoonofficial/, 'TikTok prof
 assert.match(html, /rel="noopener noreferrer"/, 'External TikTok link must not retain opener access');
 
 assert.equal(model.shows.length, 88);
-assert.equal(model.completed.length, 54);
-assert.equal(model.upcoming.length, 34);
-assert.equal(model.occurrencesBySong.size, 61);
-assert.equal(model.upcoming[0].label, 'Santiago D2');
+assert.equal(model.completed.length, 55);
+assert.equal(model.upcoming.length, 33);
+assert.equal(model.occurrencesBySong.size, 62);
+assert.equal(model.upcoming[0].label, 'Santiago D3');
 assert.equal(model.shows.at(-1).label, 'Bulacan D3');
 assert.ok(model.upcoming.every(show => show.surpriseSongs.length === 0), 'future shows must not contain songs');
 
@@ -28,11 +28,15 @@ const lima1 = model.shows.find(show => show.id === '2026-10-07-lima-d1');
 const lima2 = model.shows.find(show => show.id === '2026-10-09-lima-d2');
 const lima3 = model.shows.find(show => show.id === '2026-10-10-lima-d3');
 const santiago1 = model.shows.find(show => show.id === '2026-10-14-santiago-d1');
+const santiago2 = model.shows.find(show => show.id === '2026-10-16-santiago-d2');
 assert.deepEqual(bogota2.surpriseSongs.map(song => song.title), ['We Are Bulletproof Pt.2', 'Mikrokosmos']);
 assert.deepEqual(lima1.surpriseSongs.map(song => song.title), ['HOME', 'Outro: Wings']);
 assert.deepEqual(lima2.surpriseSongs.map(song => song.title), ['Paldogangsan', 'We Are Bulletproof: The Eternal']);
 assert.deepEqual(lima3.surpriseSongs.map(song => song.title), ['House of Cards', 'UGH!']);
 assert.deepEqual(santiago1.surpriseSongs.map(song => song.title), ['RUN', 'Save ME']);
+assert.deepEqual(santiago2.surpriseSongs.map(song => song.title), ['Telepathy', 'Heartbeat']);
+assert.equal(isFirstAppearance(model, santiago2.id, 'Telepathy'), false);
+assert.equal(isFirstAppearance(model, santiago2.id, 'Heartbeat'), true);
 assert.equal(isFirstAppearance(model, santiago1.id, 'RUN'), false);
 assert.equal(isFirstAppearance(model, santiago1.id, 'Save ME'), false);
 assert.equal(isFirstAppearance(model, bogota1.id, "I'm Fine"), true);
