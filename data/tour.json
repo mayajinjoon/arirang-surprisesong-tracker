@@ -9,12 +9,12 @@
     "fanMade": true
   },
   "dataset": {
-    "asOf": "2026-10-17",
-    "completedThrough": "2026-10-16",
-    "completedThroughLabel": "Santiago D2",
+    "asOf": "2026-10-18",
+    "completedThrough": "2026-10-17",
+    "completedThroughLabel": "Santiago D3",
     "totalShows": 88,
-    "completedShows": 55,
-    "upcomingShows": 33,
+    "completedShows": 56,
+    "upcomingShows": 32,
     "confidenceNote": "Official BIGHIT MUSIC/HYBE/Weverse sources govern calendar data. Surprise-song data is independently corroborated because no official consolidated song ledger was found."
   },
   "rules": {
@@ -304,6 +304,15 @@
       "type": "show-setlist",
       "authority": "secondary",
       "accessedAt": "2026-10-17"
+    },
+    {
+      "id": "santiago-d3-contributor-report",
+      "title": "Santiago D3 surprise songs — contributor report, pending independent confirmation",
+      "publisher": "Tracker contributor report",
+      "url": "https://github.com/mayajinjoon/arirang-surprisesong-tracker/commits/main/",
+      "type": "fan-reported-setlist",
+      "authority": "secondary",
+      "accessedAt": "2026-10-18"
     }
   ],
   "shows": [
@@ -2780,7 +2789,7 @@
     {
       "id": "2026-10-17-santiago-d3",
       "date": "2026-10-17",
-      "status": "upcoming",
+      "status": "completed",
       "leg": "latin-america",
       "country": {
         "code": "CL",
@@ -2795,7 +2804,22 @@
         "longitude": -70.6106,
         "precision": "venue-approximate"
       },
-      "surpriseSongs": [],
+      "surpriseSongs": [
+        {
+          "title": "Jump",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "santiago-d3-contributor-report"
+          ]
+        },
+        {
+          "title": "Spine Breaker",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "santiago-d3-contributor-report"
+          ]
+        }
+      ],
       "specialPerformances": [],
       "scheduleSourceIds": [
         "weverse-latam",
