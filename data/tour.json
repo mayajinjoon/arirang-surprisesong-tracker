@@ -9,12 +9,12 @@
     "fanMade": true
   },
   "dataset": {
-    "asOf": "2026-10-18",
-    "completedThrough": "2026-10-17",
-    "completedThroughLabel": "Santiago D3",
+    "asOf": "2026-10-22",
+    "completedThrough": "2026-10-21",
+    "completedThroughLabel": "Buenos Aires D1",
     "totalShows": 88,
-    "completedShows": 56,
-    "upcomingShows": 32,
+    "completedShows": 57,
+    "upcomingShows": 31,
     "confidenceNote": "Official BIGHIT MUSIC/HYBE/Weverse sources govern calendar data. Surprise-song data is independently corroborated because no official consolidated song ledger was found."
   },
   "rules": {
@@ -313,6 +313,15 @@
       "type": "fan-reported-setlist",
       "authority": "secondary",
       "accessedAt": "2026-10-18"
+    },
+    {
+      "id": "buenos-aires-d1-livenation",
+      "title": "BTS ARIRANG Buenos Aires D1 — featured setlist 21 October 2026",
+      "publisher": "Live Nation",
+      "url": "https://www.livenation.com/artist/K8vZ917KpXV/bts-events",
+      "type": "show-setlist",
+      "authority": "secondary",
+      "accessedAt": "2026-10-22"
     }
   ],
   "shows": [
@@ -2829,7 +2838,7 @@
     {
       "id": "2026-10-21-buenos-aires-d1",
       "date": "2026-10-21",
-      "status": "upcoming",
+      "status": "completed",
       "leg": "latin-america",
       "country": {
         "code": "AR",
@@ -2844,7 +2853,22 @@
         "longitude": -57.989,
         "precision": "venue-approximate"
       },
-      "surpriseSongs": [],
+      "surpriseSongs": [
+        {
+          "title": "Hold Me Tight",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "buenos-aires-d1-livenation"
+          ]
+        },
+        {
+          "title": "Dionysus",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "buenos-aires-d1-livenation"
+          ]
+        }
+      ],
       "specialPerformances": [],
       "scheduleSourceIds": [
         "weverse-latam-additional",
