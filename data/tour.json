@@ -9,12 +9,12 @@
     "fanMade": true
   },
   "dataset": {
-    "asOf": "2026-10-22",
-    "completedThrough": "2026-10-21",
-    "completedThroughLabel": "Buenos Aires D1",
+    "asOf": "2026-10-24",
+    "completedThrough": "2026-10-23",
+    "completedThroughLabel": "Buenos Aires D2",
     "totalShows": 88,
-    "completedShows": 57,
-    "upcomingShows": 31,
+    "completedShows": 58,
+    "upcomingShows": 30,
     "confidenceNote": "Official BIGHIT MUSIC/HYBE/Weverse sources govern calendar data. Surprise-song data is independently corroborated because no official consolidated song ledger was found."
   },
   "rules": {
@@ -322,6 +322,24 @@
       "type": "show-setlist",
       "authority": "secondary",
       "accessedAt": "2026-10-22"
+    },
+    {
+      "id": "buenos-aires-d2-livenation",
+      "title": "BTS ARIRANG Buenos Aires D2 — setlist 23 October 2026",
+      "publisher": "Live Nation",
+      "url": "https://www.livenation.com/artist/K8vZ917KpXV/bts-events",
+      "type": "show-setlist",
+      "authority": "secondary",
+      "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "buenos-aires-d2-ticketmaster",
+      "title": "BTS ARIRANG La Plata 23 October 2026 — setlist",
+      "publisher": "Ticketmaster",
+      "url": "https://www.ticketmaster.com.mx/bts-boletos/artist/2110227?page=29",
+      "type": "show-setlist",
+      "authority": "secondary",
+      "accessedAt": "2026-10-24"
     }
   ],
   "shows": [
@@ -2878,7 +2896,7 @@
     {
       "id": "2026-10-23-buenos-aires-d2",
       "date": "2026-10-23",
-      "status": "upcoming",
+      "status": "completed",
       "leg": "latin-america",
       "country": {
         "code": "AR",
@@ -2893,7 +2911,24 @@
         "longitude": -57.989,
         "precision": "venue-approximate"
       },
-      "surpriseSongs": [],
+      "surpriseSongs": [
+        {
+          "title": "Attack on Bangtan",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "buenos-aires-d2-livenation",
+            "buenos-aires-d2-ticketmaster"
+          ]
+        },
+        {
+          "title": "Epilogue: Young Forever",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "buenos-aires-d2-livenation",
+            "buenos-aires-d2-ticketmaster"
+          ]
+        }
+      ],
       "specialPerformances": [],
       "scheduleSourceIds": [
         "weverse-latam",
