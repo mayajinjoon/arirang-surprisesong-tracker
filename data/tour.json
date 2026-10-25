@@ -9,12 +9,12 @@
     "fanMade": true
   },
   "dataset": {
-    "asOf": "2026-10-24",
-    "completedThrough": "2026-10-23",
-    "completedThroughLabel": "Buenos Aires D2",
+    "asOf": "2026-10-25",
+    "completedThrough": "2026-10-24",
+    "completedThroughLabel": "Buenos Aires D3",
     "totalShows": 88,
-    "completedShows": 58,
-    "upcomingShows": 30,
+    "completedShows": 59,
+    "upcomingShows": 29,
     "confidenceNote": "Official BIGHIT MUSIC/HYBE/Weverse sources govern calendar data. Surprise-song data is independently corroborated because no official consolidated song ledger was found."
   },
   "rules": {
@@ -340,6 +340,15 @@
       "type": "show-setlist",
       "authority": "secondary",
       "accessedAt": "2026-10-24"
+    },
+    {
+      "id": "buenos-aires-d3-setlistfm",
+      "title": "BTS at Estadio Único de La Plata — 24 Oct 2026",
+      "publisher": "setlist.fm",
+      "url": "https://www.setlist.fm/search?query=BTS+La+Plata+2026-10-24",
+      "type": "show-setlist",
+      "authority": "secondary",
+      "accessedAt": "2026-10-25"
     }
   ],
   "shows": [
@@ -2938,7 +2947,7 @@
     {
       "id": "2026-10-24-buenos-aires-d3",
       "date": "2026-10-24",
-      "status": "upcoming",
+      "status": "completed",
       "leg": "latin-america",
       "country": {
         "code": "AR",
@@ -2953,7 +2962,22 @@
         "longitude": -57.989,
         "precision": "venue-approximate"
       },
-      "surpriseSongs": [],
+      "surpriseSongs": [
+        {
+          "title": "Lost",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "buenos-aires-d3-setlistfm"
+          ]
+        },
+        {
+          "title": "BTS Cypher 4",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "buenos-aires-d3-setlistfm"
+          ]
+        }
+      ],
       "specialPerformances": [],
       "scheduleSourceIds": [
         "weverse-latam",
