@@ -15,10 +15,10 @@ assert.match(html, /https:\/\/www\.tiktok\.com\/@mayajoonofficial/, 'TikTok prof
 assert.match(html, /rel="noopener noreferrer"/, 'External TikTok link must not retain opener access');
 
 assert.equal(model.shows.length, 88);
-assert.equal(model.completed.length, 58);
-assert.equal(model.upcoming.length, 30);
-assert.equal(model.occurrencesBySong.size, 63);
-assert.equal(model.upcoming[0].label, 'Buenos Aires D3');
+assert.equal(model.completed.length, 59);
+assert.equal(model.upcoming.length, 29);
+assert.equal(model.occurrencesBySong.size, 65);
+assert.equal(model.upcoming[0].label, 'São Paulo D1');
 assert.equal(model.shows.at(-1).label, 'Bulacan D3');
 assert.ok(model.upcoming.every(show => show.surpriseSongs.length === 0), 'future shows must not contain songs');
 
@@ -32,6 +32,7 @@ const santiago2 = model.shows.find(show => show.id === '2026-10-16-santiago-d2')
 const santiago3 = model.shows.find(show => show.id === '2026-10-17-santiago-d3');
 const buenosAires1 = model.shows.find(show => show.id === '2026-10-21-buenos-aires-d1');
 const buenosAires2 = model.shows.find(show => show.id === '2026-10-23-buenos-aires-d2');
+const buenosAires3 = model.shows.find(show => show.id === '2026-10-24-buenos-aires-d3');
 assert.deepEqual(bogota2.surpriseSongs.map(song => song.title), ['We Are Bulletproof Pt.2', 'Mikrokosmos']);
 assert.deepEqual(lima1.surpriseSongs.map(song => song.title), ['HOME', 'Outro: Wings']);
 assert.deepEqual(lima2.surpriseSongs.map(song => song.title), ['Paldogangsan', 'We Are Bulletproof: The Eternal']);
@@ -41,6 +42,9 @@ assert.deepEqual(santiago2.surpriseSongs.map(song => song.title), ['Telepathy', 
 assert.deepEqual(santiago3.surpriseSongs.map(song => song.title), ['Jump', 'Spine Breaker']);
 assert.deepEqual(buenosAires1.surpriseSongs.map(song => song.title), ['Hold Me Tight', 'Dionysus']);
 assert.deepEqual(buenosAires2.surpriseSongs.map(song => song.title), ['Attack on Bangtan', 'Epilogue: Young Forever']);
+assert.deepEqual(buenosAires3.surpriseSongs.map(song => song.title), ['Lost', 'BTS Cypher 4']);
+assert.equal(isFirstAppearance(model, buenosAires3.id, 'Lost'), true);
+assert.equal(isFirstAppearance(model, buenosAires3.id, 'BTS Cypher 4'), true);
 assert.equal(isFirstAppearance(model, buenosAires2.id, 'Attack on Bangtan'), false);
 assert.equal(isFirstAppearance(model, buenosAires2.id, 'Epilogue: Young Forever'), false);
 assert.equal(isFirstAppearance(model, buenosAires1.id, 'Hold Me Tight'), true);
