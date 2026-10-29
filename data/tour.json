@@ -9,12 +9,12 @@
     "fanMade": true
   },
   "dataset": {
-    "asOf": "2026-10-25",
-    "completedThrough": "2026-10-24",
-    "completedThroughLabel": "Buenos Aires D3",
+    "asOf": "2026-10-29",
+    "completedThrough": "2026-10-28",
+    "completedThroughLabel": "São Paulo D1",
     "totalShows": 88,
-    "completedShows": 59,
-    "upcomingShows": 29,
+    "completedShows": 60,
+    "upcomingShows": 28,
     "confidenceNote": "Official BIGHIT MUSIC/HYBE/Weverse sources govern calendar data. Surprise-song data is independently corroborated because no official consolidated song ledger was found."
   },
   "rules": {
@@ -349,6 +349,24 @@
       "type": "show-setlist",
       "authority": "secondary",
       "accessedAt": "2026-10-25"
+    },
+    {
+      "id": "sao-paulo-d1-billboard",
+      "title": "BTS ARIRANG São Paulo D1 surprise songs, 28 October 2026",
+      "publisher": "Billboard Brasil",
+      "url": "https://billboard.com.br/",
+      "type": "concert-report",
+      "authority": "secondary",
+      "accessedAt": "2026-10-29"
+    },
+    {
+      "id": "sao-paulo-d1-uol",
+      "title": "BTS São Paulo 28 October 2026 setlist report",
+      "publisher": "UOL",
+      "url": "https://www.uol.com.br/",
+      "type": "concert-report",
+      "authority": "secondary",
+      "accessedAt": "2026-10-29"
     }
   ],
   "shows": [
@@ -2987,7 +3005,7 @@
     {
       "id": "2026-10-28-sao-paulo-d1",
       "date": "2026-10-28",
-      "status": "upcoming",
+      "status": "completed",
       "leg": "latin-america",
       "country": {
         "code": "BR",
@@ -3002,7 +3020,24 @@
         "longitude": -46.7202,
         "precision": "venue-approximate"
       },
-      "surpriseSongs": [],
+      "surpriseSongs": [
+        {
+          "title": "Black Swan",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "sao-paulo-d1-billboard",
+            "sao-paulo-d1-uol"
+          ]
+        },
+        {
+          "title": "Silver Spoon (Baepsae)",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "sao-paulo-d1-billboard",
+            "sao-paulo-d1-uol"
+          ]
+        }
+      ],
       "specialPerformances": [],
       "scheduleSourceIds": [
         "weverse-latam",
