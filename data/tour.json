@@ -9,12 +9,12 @@
     "fanMade": true
   },
   "dataset": {
-    "asOf": "2026-10-29",
-    "completedThrough": "2026-10-28",
-    "completedThroughLabel": "São Paulo D1",
+    "asOf": "2026-10-31",
+    "completedThrough": "2026-10-30",
+    "completedThroughLabel": "São Paulo D2",
     "totalShows": 88,
-    "completedShows": 60,
-    "upcomingShows": 28,
+    "completedShows": 61,
+    "upcomingShows": 27,
     "confidenceNote": "Official BIGHIT MUSIC/HYBE/Weverse sources govern calendar data. Surprise-song data is independently corroborated because no official consolidated song ledger was found."
   },
   "rules": {
@@ -367,6 +367,24 @@
       "type": "concert-report",
       "authority": "secondary",
       "accessedAt": "2026-10-29"
+    },
+    {
+      "id": "sao-paulo-d2-livenation",
+      "title": "BTS São Paulo 30 October 2026 featured setlist",
+      "publisher": "Live Nation",
+      "url": "https://web-b.origin.livenation.com/artist/K8vZ917KpXV/bts-events",
+      "type": "setlist",
+      "authority": "secondary",
+      "accessedAt": "2026-10-31"
+    },
+    {
+      "id": "sao-paulo-d2-uol",
+      "title": "BTS emociona o público com Airplane Pt. 2 e I Need U no MorumBIS",
+      "publisher": "UOL",
+      "url": "https://www.uol.com.br/toca/noticias/2026/10/30/bts-emociona-o-publico-com-airplane-pt-2-e-i-need-u-no-morumbis.ghtm",
+      "type": "concert-report",
+      "authority": "secondary",
+      "accessedAt": "2026-10-31"
     }
   ],
   "shows": [
@@ -3047,7 +3065,7 @@
     {
       "id": "2026-10-30-sao-paulo-d2",
       "date": "2026-10-30",
-      "status": "upcoming",
+      "status": "completed",
       "leg": "latin-america",
       "country": {
         "code": "BR",
@@ -3062,7 +3080,24 @@
         "longitude": -46.7202,
         "precision": "venue-approximate"
       },
-      "surpriseSongs": [],
+      "surpriseSongs": [
+        {
+          "title": "Airplane Pt.2",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "sao-paulo-d2-livenation",
+            "sao-paulo-d2-uol"
+          ]
+        },
+        {
+          "title": "I NEED U",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "sao-paulo-d2-livenation",
+            "sao-paulo-d2-uol"
+          ]
+        }
+      ],
       "specialPerformances": [],
       "scheduleSourceIds": [
         "weverse-latam",
