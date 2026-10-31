@@ -15,10 +15,10 @@ assert.match(html, /https:\/\/www\.tiktok\.com\/@mayajoonofficial/, 'TikTok prof
 assert.match(html, /rel="noopener noreferrer"/, 'External TikTok link must not retain opener access');
 
 assert.equal(model.shows.length, 88);
-assert.equal(model.completed.length, 60);
-assert.equal(model.upcoming.length, 28);
+assert.equal(model.completed.length, 61);
+assert.equal(model.upcoming.length, 27);
 assert.equal(model.occurrencesBySong.size, 65);
-assert.equal(model.upcoming[0].label, 'São Paulo D2');
+assert.equal(model.upcoming[0].label, 'São Paulo D3');
 assert.equal(model.shows.at(-1).label, 'Bulacan D3');
 assert.ok(model.upcoming.every(show => show.surpriseSongs.length === 0), 'future shows must not contain songs');
 
@@ -34,6 +34,7 @@ const buenosAires1 = model.shows.find(show => show.id === '2026-10-21-buenos-air
 const buenosAires2 = model.shows.find(show => show.id === '2026-10-23-buenos-aires-d2');
 const buenosAires3 = model.shows.find(show => show.id === '2026-10-24-buenos-aires-d3');
 const saoPaulo1 = model.shows.find(show => show.id === '2026-10-28-sao-paulo-d1');
+const saoPaulo2 = model.shows.find(show => show.id === '2026-10-30-sao-paulo-d2');
 assert.deepEqual(bogota2.surpriseSongs.map(song => song.title), ['We Are Bulletproof Pt.2', 'Mikrokosmos']);
 assert.deepEqual(lima1.surpriseSongs.map(song => song.title), ['HOME', 'Outro: Wings']);
 assert.deepEqual(lima2.surpriseSongs.map(song => song.title), ['Paldogangsan', 'We Are Bulletproof: The Eternal']);
@@ -45,6 +46,9 @@ assert.deepEqual(buenosAires1.surpriseSongs.map(song => song.title), ['Hold Me T
 assert.deepEqual(buenosAires2.surpriseSongs.map(song => song.title), ['Attack on Bangtan', 'Epilogue: Young Forever']);
 assert.deepEqual(buenosAires3.surpriseSongs.map(song => song.title), ['Lost', 'BTS Cypher 4']);
 assert.deepEqual(saoPaulo1.surpriseSongs.map(song => song.title), ['Black Swan', 'Silver Spoon (Baepsae)']);
+assert.deepEqual(saoPaulo2.surpriseSongs.map(song => song.title), ['Airplane Pt.2', 'I NEED U']);
+assert.equal(isFirstAppearance(model, saoPaulo2.id, 'Airplane Pt.2'), false);
+assert.equal(isFirstAppearance(model, saoPaulo2.id, 'I NEED U'), false);
 assert.equal(isFirstAppearance(model, saoPaulo1.id, 'Black Swan'), false);
 assert.equal(isFirstAppearance(model, saoPaulo1.id, 'Silver Spoon (Baepsae)'), false);
 assert.equal(isFirstAppearance(model, buenosAires3.id, 'Lost'), true);
