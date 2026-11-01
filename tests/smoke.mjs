@@ -82,7 +82,7 @@ for (const city of model.cities.values()) {
 for (const relative of ['./styles.css','./app.js','./assets/original/maya-pop-purple.jpeg']) {
   assert.ok(html.includes(relative), `missing relative GitHub Pages path: ${relative}`);
 }
-assert.ok(app.includes("'./data/tour.json'"), 'dataset URL must remain relative for GitHub Pages');
+assert.ok(app.includes('./data/tour.json'), 'dataset URL must remain relative for GitHub Pages');
 assert.ok(!/(?:src|href)="\/(?!\/)/.test(html), 'root-absolute asset path breaks project-site deployment');
 assert.match(html, /role="tablist"/);
 assert.match(html, /aria-live="polite"/);
