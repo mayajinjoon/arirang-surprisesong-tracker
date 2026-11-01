@@ -9,12 +9,12 @@
     "fanMade": true
   },
   "dataset": {
-    "asOf": "2026-10-31",
-    "completedThrough": "2026-10-30",
-    "completedThroughLabel": "São Paulo D2",
+    "asOf": "2026-11-01",
+    "completedThrough": "2026-10-31",
+    "completedThroughLabel": "São Paulo D3",
     "totalShows": 88,
-    "completedShows": 61,
-    "upcomingShows": 27,
+    "completedShows": 62,
+    "upcomingShows": 26,
     "confidenceNote": "Official BIGHIT MUSIC/HYBE/Weverse sources govern calendar data. Surprise-song data is independently corroborated because no official consolidated song ledger was found."
   },
   "rules": {
@@ -385,6 +385,24 @@
       "type": "concert-report",
       "authority": "secondary",
       "accessedAt": "2026-10-31"
+    },
+    {
+      "id": "sao-paulo-d3-livenation",
+      "title": "BTS São Paulo 31 October 2026 featured setlist",
+      "publisher": "Live Nation",
+      "url": "https://web-a.origin.livenation.com/artist/K8vZ917KpXV/bts-events",
+      "type": "setlist",
+      "authority": "secondary",
+      "accessedAt": "2026-11-01"
+    },
+    {
+      "id": "sao-paulo-d3-setlist-lab",
+      "title": "ARIRANG Tour surprise song archive São Paulo D3",
+      "publisher": "BTS Setlist Lab",
+      "url": "https://pilicat913.github.io/bts-setlist-lab/",
+      "type": "fan-archive",
+      "authority": "secondary",
+      "accessedAt": "2026-11-01"
     }
   ],
   "shows": [
@@ -3107,7 +3125,7 @@
     {
       "id": "2026-10-31-sao-paulo-d3",
       "date": "2026-10-31",
-      "status": "upcoming",
+      "status": "completed",
       "leg": "latin-america",
       "country": {
         "code": "BR",
@@ -3122,7 +3140,24 @@
         "longitude": -46.7202,
         "precision": "venue-approximate"
       },
-      "surpriseSongs": [],
+      "surpriseSongs": [
+        {
+          "title": "Ddaeng",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "sao-paulo-d3-livenation",
+            "sao-paulo-d3-setlist-lab"
+          ]
+        },
+        {
+          "title": "BTS Cypher Pt.3: Killer",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "sao-paulo-d3-livenation",
+            "sao-paulo-d3-setlist-lab"
+          ]
+        }
+      ],
       "specialPerformances": [],
       "scheduleSourceIds": [
         "weverse-latam",
