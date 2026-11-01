@@ -1,4 +1,4 @@
-const DATA_URL = './data/tour.json';
+const DATA_URL = `./data/tour.json?v=${Date.now()}`;
 
 export function canonicalSongKey(title) {
   return title.trim().toLocaleLowerCase('en').replace(/\s+/g, ' ');
