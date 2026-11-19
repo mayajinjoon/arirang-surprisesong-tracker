@@ -9,12 +9,12 @@
     "fanMade": true
   },
   "dataset": {
-    "asOf": "2026-11-01",
-    "completedThrough": "2026-10-31",
-    "completedThroughLabel": "São Paulo D3",
+    "asOf": "2026-11-19",
+    "completedThrough": "2026-11-19",
+    "completedThroughLabel": "Kaohsiung D1",
     "totalShows": 88,
-    "completedShows": 62,
-    "upcomingShows": 26,
+    "completedShows": 63,
+    "upcomingShows": 25,
     "confidenceNote": "Official BIGHIT MUSIC/HYBE/Weverse sources govern calendar data. Surprise-song data is independently corroborated because no official consolidated song ledger was found."
   },
   "rules": {
@@ -403,6 +403,24 @@
       "type": "fan-archive",
       "authority": "secondary",
       "accessedAt": "2026-11-01"
+    },
+    {
+      "id": "kaohsiung-d1-nownews",
+      "title": "BTS ARIRANG Kaohsiung D1 concert report, 19 November 2026",
+      "publisher": "NOWnews",
+      "url": "https://www.nownews.com/amp/news/6893714",
+      "type": "concert-report",
+      "authority": "secondary",
+      "accessedAt": "2026-11-19"
+    },
+    {
+      "id": "kaohsiung-d1-tvbs",
+      "title": "BTS ARIRANG Kaohsiung D1 concert report, 19 November 2026",
+      "publisher": "TVBS",
+      "url": "https://news.tvbs.com.tw/entertainment/jk-pop/4053237",
+      "type": "concert-report",
+      "authority": "secondary",
+      "accessedAt": "2026-11-19"
     }
   ],
   "shows": [
@@ -3167,7 +3185,7 @@
     {
       "id": "2026-11-19-kaohsiung-d1",
       "date": "2026-11-19",
-      "status": "upcoming",
+      "status": "completed",
       "leg": "asia-australia",
       "country": {
         "code": "TW",
@@ -3182,7 +3200,24 @@
         "longitude": 120.2946,
         "precision": "venue-approximate"
       },
-      "surpriseSongs": [],
+      "surpriseSongs": [
+        {
+          "title": "DNA",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kaohsiung-d1-nownews",
+            "kaohsiung-d1-tvbs"
+          ]
+        },
+        {
+          "title": "Answer: Love Myself",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kaohsiung-d1-nownews",
+            "kaohsiung-d1-tvbs"
+          ]
+        }
+      ],
       "specialPerformances": [],
       "scheduleSourceIds": [
         "weverse-asia-australia",
