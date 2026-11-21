@@ -15,10 +15,10 @@ assert.match(html, /https:\/\/www\.tiktok\.com\/@mayajoonofficial/, 'TikTok prof
 assert.match(html, /rel="noopener noreferrer"/, 'External TikTok link must not retain opener access');
 
 assert.equal(model.shows.length, 88);
-assert.equal(model.completed.length, 63);
-assert.equal(model.upcoming.length, 25);
-assert.equal(model.occurrencesBySong.size, 67);
-assert.equal(model.completed.at(-1).label, 'Kaohsiung D1');
+assert.equal(model.completed.length, 64);
+assert.equal(model.upcoming.length, 24);
+assert.equal(model.occurrencesBySong.size, 68);
+assert.equal(model.completed.at(-1).label, 'Kaohsiung D2');
 assert.equal(model.shows.at(-1).label, 'Bulacan D3');
 assert.ok(model.upcoming.every(show => show.surpriseSongs.length === 0), 'future shows must not contain songs');
 
@@ -37,6 +37,7 @@ const saoPaulo1 = model.shows.find(show => show.id === '2026-10-28-sao-paulo-d1'
 const saoPaulo2 = model.shows.find(show => show.id === '2026-10-30-sao-paulo-d2');
 const saoPaulo3 = model.shows.find(show => show.id === '2026-10-31-sao-paulo-d3');
 const kaohsiung1 = model.shows.find(show => show.id === '2026-11-19-kaohsiung-d1');
+const kaohsiung2 = model.shows.find(show => show.id === '2026-11-21-kaohsiung-d2');
 assert.deepEqual(bogota2.surpriseSongs.map(song => song.title), ['We Are Bulletproof Pt.2', 'Mikrokosmos']);
 assert.deepEqual(lima1.surpriseSongs.map(song => song.title), ['HOME', 'Outro: Wings']);
 assert.deepEqual(lima2.surpriseSongs.map(song => song.title), ['Paldogangsan', 'We Are Bulletproof: The Eternal']);
@@ -51,6 +52,9 @@ assert.deepEqual(saoPaulo1.surpriseSongs.map(song => song.title), ['Black Swan',
 assert.deepEqual(saoPaulo2.surpriseSongs.map(song => song.title), ['Airplane Pt.2', 'I NEED U']);
 assert.deepEqual(saoPaulo3.surpriseSongs.map(song => song.title), ['Ddaeng', 'BTS Cypher Pt.3: Killer']);
 assert.deepEqual(kaohsiung1.surpriseSongs.map(song => song.title), ['DNA', 'Answer: Love Myself']);
+assert.deepEqual(kaohsiung2.surpriseSongs.map(song => song.title), ['Sea', 'Boy In Luv']);
+assert.equal(isFirstAppearance(model, kaohsiung2.id, 'Sea'), true);
+assert.equal(isFirstAppearance(model, kaohsiung2.id, 'Boy In Luv'), false);
 assert.equal(isFirstAppearance(model, kaohsiung1.id, 'DNA'), false);
 assert.equal(isFirstAppearance(model, kaohsiung1.id, 'Answer: Love Myself'), true);
 assert.equal(isFirstAppearance(model, saoPaulo3.id, 'Ddaeng'), false);
