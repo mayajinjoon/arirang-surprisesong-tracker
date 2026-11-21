@@ -9,13 +9,13 @@
     "fanMade": true
   },
   "dataset": {
-    "asOf": "2026-11-19",
-    "completedThrough": "2026-11-19",
-    "completedThroughLabel": "Kaohsiung D1",
+    "asOf": "2026-11-21",
+    "completedThrough": "2026-11-21",
+    "completedThroughLabel": "Kaohsiung D2",
     "totalShows": 88,
-    "completedShows": 63,
-    "upcomingShows": 25,
-    "confidenceNote": "Official BIGHIT MUSIC/HYBE/Weverse sources govern calendar data. Surprise-song data is independently corroborated because no official consolidated song ledger was found."
+    "completedShows": 64,
+    "upcomingShows": 24,
+    "confidenceNote": "Official BIGHIT MUSIC/HYBE/Weverse sources govern calendar data. Surprise songs generally use independent corroboration; Kaohsiung D2 is recorded from a direct viewer eyewitness confirmation pending independent publication."
   },
   "rules": {
     "chronology": "Sort shows by ISO date ascending; performanceOrder breaks ties only within a show.",
@@ -421,6 +421,15 @@
       "type": "concert-report",
       "authority": "secondary",
       "accessedAt": "2026-11-19"
+    },
+    {
+      "id": "kaohsiung-d2-eyewitness",
+      "title": "Kaohsiung D2 surprise songs — attendee eyewitness confirmation",
+      "publisher": "Concert viewer (direct confirmation to tracker maintainer)",
+      "url": "",
+      "type": "eyewitness-report",
+      "authority": "primary-eyewitness",
+      "accessedAt": "2026-11-21"
     }
   ],
   "shows": [
@@ -3227,7 +3236,7 @@
     {
       "id": "2026-11-21-kaohsiung-d2",
       "date": "2026-11-21",
-      "status": "upcoming",
+      "status": "completed",
       "leg": "asia-australia",
       "country": {
         "code": "TW",
@@ -3242,7 +3251,22 @@
         "longitude": 120.2946,
         "precision": "venue-approximate"
       },
-      "surpriseSongs": [],
+      "surpriseSongs": [
+        {
+          "title": "Sea",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kaohsiung-d2-eyewitness"
+          ]
+        },
+        {
+          "title": "Boy In Luv",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kaohsiung-d2-eyewitness"
+          ]
+        }
+      ],
       "specialPerformances": [],
       "scheduleSourceIds": [
         "weverse-asia-australia",
