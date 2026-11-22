@@ -9,12 +9,12 @@
     "fanMade": true
   },
   "dataset": {
-    "asOf": "2026-11-21",
-    "completedThrough": "2026-11-21",
-    "completedThroughLabel": "Kaohsiung D2",
+    "asOf": "2026-11-22",
+    "completedThrough": "2026-11-22",
+    "completedThroughLabel": "Kaohsiung D3",
     "totalShows": 88,
-    "completedShows": 64,
-    "upcomingShows": 24,
+    "completedShows": 65,
+    "upcomingShows": 23,
     "confidenceNote": "Official BIGHIT MUSIC/HYBE/Weverse sources govern calendar data. Surprise songs generally use independent corroboration; Kaohsiung D2 is recorded from a direct viewer eyewitness confirmation pending independent publication."
   },
   "rules": {
@@ -430,6 +430,24 @@
       "type": "eyewitness-report",
       "authority": "primary-eyewitness",
       "accessedAt": "2026-11-21"
+    },
+    {
+      "id": "kaohsiung-d3-btscharts",
+      "title": "Kaohsiung D3 surprise songs — BTS Charts & News live updates",
+      "publisher": "BTS Charts & News",
+      "url": "https://www.sotwe.com/btschartsxdaily?lang=en",
+      "type": "live-fan-report",
+      "authority": "secondary",
+      "accessedAt": "2026-11-22"
+    },
+    {
+      "id": "kaohsiung-d3-bangtan-reddit",
+      "title": "BTS ARIRANG Tour in Kaohsiung Day 3 live megathread",
+      "publisher": "r/bangtan",
+      "url": "https://www.reddit.com/r/bangtan/comments/1y2es8m/bts_arirang_tour_in_kaohsiung_megathread_day_3/",
+      "type": "eyewitness-discussion",
+      "authority": "secondary",
+      "accessedAt": "2026-11-22"
     }
   ],
   "shows": [
@@ -3276,7 +3294,7 @@
     {
       "id": "2026-11-22-kaohsiung-d3",
       "date": "2026-11-22",
-      "status": "upcoming",
+      "status": "completed",
       "leg": "asia-australia",
       "country": {
         "code": "TW",
@@ -3291,7 +3309,24 @@
         "longitude": 120.2946,
         "precision": "venue-approximate"
       },
-      "surpriseSongs": [],
+      "surpriseSongs": [
+        {
+          "title": "Embarrassed (Blanket Kick)",
+          "performanceOrder": 1,
+          "sourceIds": [
+            "kaohsiung-d3-btscharts",
+            "kaohsiung-d3-bangtan-reddit"
+          ]
+        },
+        {
+          "title": "Boy With Luv",
+          "performanceOrder": 2,
+          "sourceIds": [
+            "kaohsiung-d3-btscharts",
+            "kaohsiung-d3-bangtan-reddit"
+          ]
+        }
+      ],
       "specialPerformances": [],
       "scheduleSourceIds": [
         "weverse-asia-australia",
